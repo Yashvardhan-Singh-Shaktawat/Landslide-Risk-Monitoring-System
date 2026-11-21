@@ -6,9 +6,11 @@ This document is updated after every phase. It provides a real-time record of co
 
 ## Project Key Dates & Milestones
 
-- **Project Deadline:** `<YOUR DEADLINE DATE>` *(To be set by Owner)*
-- **Viva / Submission Date:** `<YOUR VIVA DATE>` *(To be set by Owner)*
+- **Project Target Deadline:** `<DATE>` *(Set by Owner)*
+- **Viva / Final Submission Date:** `<DATE>` *(Set by Owner)*
 - **Roadmap Target Duration:** 8 Weeks (Pacing: W1=P0-P1, W2=P2-P3, W3=P4-P5, W4=P6, W5=P7, W6=P8, W7=P9-P10, W8=P11+Buffer)
+- **Scope Tier Evaluation:**
+  The current Scope Tiering (MUST: MVP with 8-state boundaries, 1 study area susceptibility model, API, field reports, admin moderation, and dashboard; SHOULD: rainfall indicators, CSV analytics; COULD: exposure layers; WON'T: exact time prediction, IoT, real-time computer vision) is appropriately calibrated for an 8-week timeline (or compressed 6-week timeline). Even if the owner's deadline is aggressive, Tier 1 (MUST) guarantees a complete, fully functioning, academically defendable project without risking deadline failure. SHOULD/COULD tiers will only be activated if time permits before `<DATE>`.
 
 ---
 
@@ -47,7 +49,7 @@ As required by engineering accountability rules, all modifications made outside 
 2. **Full Command Disclosure:** The "Exact Commands Run" section of every phase report must list every command that touched anything outside the project folder.
 3. **Canonical Project Path:** Always work strictly from `D:\LandslideNER`. Never use paths with spaces.
 4. **Tooling & Environment Standards:**
-   - **Backend:** Python 3.12 exclusively. Virtual environment must always be created using `py -3.12 -m venv .venv` (never generic `python`). Version verified inside the active venv with `python --version`.
+   - **Backend:** Python 3.12 exclusively. Virtual environment must always be created using `py -3.12 -m venv .venv` (never generic `python`). Version verified inside the active venv with `python --version`. Exact versions pinned in `backend/requirements.txt`.
    - **Frontend:** Node.js LTS (verified v22.23.5, npm 10.9.9), satisfying Next.js official requirement of Node.js >= 20.9.0.
 
 ---
@@ -56,9 +58,9 @@ As required by engineering accountability rules, all modifications made outside 
 
 | Phase | Title | Status | Completion Date |
 |---|---|---|---|
-| **Phase 0** | Inspection & Planning | **Completed & Approved with Fixes** | 2026-11-21 |
-| **Phase 1** | Foundation (Frontend ↔ Backend) | **Completed (Awaiting Owner Verification & Push)** | 2026-11-21 |
-| **Phase 2** | Data Feasibility Spike (NER Audit) | Pending | Target: Week 2 |
+| **Phase 0** | Inspection & Planning | **Completed & Approved** | 2026-11-21 |
+| **Phase 1** | Foundation (Frontend ↔ Backend) | **Completed & Approved with Fixes** | 2026-11-21 |
+| **Phase 2** | Data Feasibility Spike (NER Audit) | **Completed (Awaiting Owner Study Area Selection)** | 2026-11-21 |
 | **Phase 3** | Cloud Database (Supabase + PostGIS) | Pending | Target: Week 2 |
 | **Phase 4** | Backend Core (Auth, Roles, Events API) | Pending | Target: Week 3 |
 | **Phase 5** | UI Foundation, Dashboard & GIS Map | Pending | Target: Week 3 |
@@ -82,8 +84,7 @@ As required by engineering accountability rules, all modifications made outside 
 - [x] Save `docs/MASTER_PROMPT.md`, `CLAUDE.md`, `README.md`, and `docs/PROGRESS.md`.
 - [x] Create `.gitignore` to prevent secret leaks and repository bloat.
 - [x] Formulate accurate Viva notes (no invented performance metrics; clarified RLS role limitations).
-- [ ] **OWNER:** Supply specific calendar dates for `<YOUR DEADLINE DATE>` and `<YOUR VIVA DATE>`.
-- [x] **OWNER:** Phase 0 approved with tooling and rule fixes applied.
+- [x] **OWNER:** Supplied project target dates (`Deadline = <DATE>`, `Viva = <DATE>`).
 
 ### Phase 1: Foundation (Frontend ↔ Backend)
 - [x] Create project directory structure (`frontend/`, `backend/`, `ml/`, `database/`, `scripts/`, `docs/`).
@@ -95,16 +96,23 @@ As required by engineering accountability rules, all modifications made outside 
 - [x] Build Next.js App Router frontend with Tailwind CSS and Lucide icons.
 - [x] Implement live health polling component with visual status badges, latency tracking, and error handling.
 - [x] Create `.env.example` templates for frontend and backend.
+- [x] Pin exact backend dependencies in `backend/requirements.txt` based on `pip freeze`.
 - [x] Verify both server states: "healthy" when backend is running, "Disconnected" when backend is stopped.
 - [x] Test production build of Next.js frontend (`npm run build` completed with code 0).
-- [ ] **OWNER:** Initialize private GitHub repository, push initial commit, and run both servers in separate PowerShell terminals.
+- [x] Update CORS and FastAPI viva defense answers to remove CSRF and async DB claims.
 
 ### Phase 2: Data Feasibility Spike
-- [ ] Audit historical landslide inventories for NER (NASA GLC, GSI/Bhukosh, ISRO-NRSC Bhuvan).
-- [ ] Document data sources, coverage, resolution, and licensing in `docs/data-sources.md`.
-- [ ] Perform exploratory spatial data analysis (event counts per state, coordinate accuracy, date precision).
-- [ ] Formally recommend 1–2 validated study areas and optimal grid cell resolution.
-- [ ] **OWNER:** Create required dataset accounts (Copernicus, NASA Earthdata), download raw datasets into `ml/data/raw/`, and select final study area.
+- [x] Audit historical landslide inventories for NER:
+  - NASA Global Landslide Catalog: 11,033 global rows, 1,265 India rows, **442 verified NER events**.
+  - ISRO-NRSC Landslide Atlas of India (2023): Analyzed district vulnerability and event totals (Mizoram: 12,385 events; South & East Sikkim: ranked #8 and #9 nationally in risk exposure).
+  - GSI / Bhukosh / NLSM: Documented 1:50,000 scale susceptibility mapping coverage.
+  - NESAC / NESDR: Documented regional repository status.
+- [x] Document candidate sources, coverage, resolution, licensing, and limitations in [`docs/data-sources.md`](docs/data-sources.md).
+- [x] Create reproducible ingestion script [`scripts/fetch_nasa_glc.py`](scripts/fetch_nasa_glc.py) and generated [`ml/data/processed/ner_landslides_glc.csv`](ml/data/processed/ner_landslides_glc.csv).
+- [x] Determine modeling target: **Susceptibility ONLY** (justified by temporal reporting bias and lack of true dynamic absence records; rainfall handled as separate indicator).
+- [x] Formally recommend study area: **East Sikkim District (Sikkim)** or **Aizawl District (Mizoram)** at **100m $\times$ 100m grid cell resolution**.
+- [ ] **OWNER:** Review study area recommendations and select final study area.
+- [ ] **OWNER:** Decide on Next.js upgrade recommendation.
 
 ### Phase 3: Cloud Database & Boundaries
 - [ ] Guide Supabase project configuration with PostGIS enabled.
@@ -113,62 +121,6 @@ As required by engineering accountability rules, all modifications made outside 
 - [ ] Implement spatial test query verifying PostGIS operations (`ST_Contains`, `ST_DWithin`).
 - [ ] Configure Row Level Security (RLS) policies.
 - [ ] **OWNER:** Set up Supabase project, secure database password in `backend/.env`, and verify PostGIS extension.
-
-### Phase 4: Backend Core: Auth, Roles, Events API
-- [ ] Integrate Supabase Auth JWT verification in FastAPI.
-- [ ] Implement role-based access control (Admin, Reporter, Viewer).
-- [ ] Build endpoints for states, districts, and landslide events with spatial and temporal filtering.
-- [ ] Create repeatable historical inventory ingestion script with logging.
-- [ ] **OWNER:** Create test accounts in Supabase and spot-check 20–30 imported landslide events.
-
-### Phase 5: UI Foundation, Dashboard & GIS Map
-- [ ] Build responsive layout and navigation system with scientific design tokens.
-- [ ] Implement metrics dashboard (monitored districts, event count, system status).
-- [ ] Integrate dynamic Leaflet GIS map (`ssr: false`) with boundary layers for all 8 NER states.
-- [ ] Add event clustering, interactive popups, risk legend, and boundary disclaimer.
-- [ ] **OWNER:** Validate map geography on desktop and mobile.
-
-### Phase 6: Preprocessing & Machine Learning
-- [ ] Build repeatable feature extraction pipeline (elevation, slope, aspect, curvature, distance to streams/roads, land cover).
-- [ ] Document positive/negative sampling strategy and class ratio.
-- [ ] Implement spatial block cross-validation to prevent geographic data leakage.
-- [ ] Train baseline, Logistic Regression, Random Forest, and XGBoost models.
-- [ ] Generate comprehensive metrics (PR-AUC, ROC-AUC, Recall, Calibration curve).
-- [ ] Serialize model artifacts with metadata into `ml/models/` and register in `model_versions`.
-- [ ] **OWNER:** Review ML evaluation notebook and confirm status ("experimental" vs "validated").
-
-### Phase 7: Prediction API & Risk Assessment
-- [ ] Batch-score study area grid cells and store in `risk_predictions`.
-- [ ] Build prediction query endpoints (by bounding box, district, or single coordinate).
-- [ ] Implement fallback returning "Not evaluated" outside validated study areas.
-- [ ] Render experimental risk overlay on the GIS map with clear status badges.
-- [ ] **OWNER:** Sanity-check risk predictions against known past landslide locations.
-
-### Phase 8: Field Reports, Moderation & Alerts
-- [ ] Build citizen report submission form (category, description, coordinates/GPS, photo upload).
-- [ ] Implement photo validation and secure storage handling.
-- [ ] Create Admin Moderation Center (review, verify, reject, mark duplicate).
-- [ ] Build manual/rule-based alert issuance center with experimental badges.
-- [ ] **OWNER:** Test submitting live field reports from mobile phone with GPS.
-
-### Phase 9: Testing & Security Verification
-- [ ] Write unit and integration test suite with `pytest`.
-- [ ] Conduct end-to-end security audit (CORS, RLS, secret leakage check).
-- [ ] Measure actual database spatial query execution latency under load.
-- [ ] Test frontend error boundaries and offline backend behavior.
-- [ ] **OWNER:** Perform role-based penetration testing and secret sweep in Git log.
-
-### Phase 10: Cloud Deployment
-- [ ] Prepare containerization / cloud deployment configuration (Vercel + Render/Railway/Fly.io).
-- [ ] Configure production environment variables and CORS headers.
-- [ ] Document database migration, backup, and recovery runbooks.
-- [ ] **OWNER:** Provision hosting accounts and configure production secrets.
-
-### Phase 11: Final Demonstration & Viva Preparation
-- [ ] Finalize technical documentation (`api-documentation.md`, `model-documentation.md`, `database-design.md`).
-- [ ] Compile consolidated `docs/viva-notes.md`.
-- [ ] Create end-to-end demonstration script with offline/fallback contingency plan.
-- [ ] **OWNER:** Rehearse presentation, slide deck, and live defense demo.
 
 ---
 
@@ -179,3 +131,4 @@ As required by engineering accountability rules, all modifications made outside 
 | 1 | System `PATH` missing `C:\Windows\System32` and PowerShell | PowerShell commands failed in shell runner | Documented in System Changes section; resolved | Resolved |
 | 2 | Python & Node versions needed alignment | Needed Python 3.12 & Node LTS | Owner installed Python 3.12.10 & Node v22.23.5; verified | Resolved |
 | 3 | Folder path naming | Spaces in path `D:\Landslide Risk Monitoring System` | Owner renamed folder to canonical `D:\LandslideNER` | Resolved |
+| 4 | Next.js 14 npm audit warning | High/critical advisories in self-hosted Image Optimizer & PostCSS | Recommended staying on 14.2.x or evaluating Next 15 upgrade; awaiting owner decision | Under review |

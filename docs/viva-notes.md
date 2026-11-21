@@ -42,12 +42,12 @@ This document records the theoretical foundations, architectural rationale, and 
 > **Answer:** Separation of concerns. Next.js excels at server-rendered React user interfaces, dynamic client caching, and modern GIS map rendering. FastAPI is purpose-built for high-performance Python services with native support for asynchronous event loops, automated OpenAPI documentation, Pydantic type validation, and seamless integration with Python's geospatial/scientific ecosystem (GeoAlchemy2, Shapely, NumPy, Scikit-Learn, Joblib). Keeping them decoupled allows independent scaling, deployment, and testing.
 
 ### Q2: What is Cross-Origin Resource Sharing (CORS), and why must it be configured strictly?
-> **Answer:** CORS is a browser security mechanism that restricts web applications running on one origin (e.g., `http://localhost:3000`) from requesting resources from a different origin (e.g., `http://localhost:8000`) unless the server explicitly permits it via `Access-Control-Allow-Origin` headers. Wildcard allowances (`*`) in production create serious security risks (e.g., malicious sites invoking authenticated API endpoints via credentialed requests). We configure explicit origin whitelists (`localhost:3000`).
+> **Answer:** CORS is a browser-enforced security mechanism that controls which origins are allowed to read HTTP responses from cross-origin requests. It is critical to note that CORS is **not** a protection against Cross-Site Request Forgery (CSRF)—browsers will still send simple cross-origin requests (e.g., standard form submissions or image fetches); CSRF defense requires SameSite cookies or anti-CSRF tokens. Furthermore, according to the W3C/WHATWG CORS specification, a wildcard allowance (`Access-Control-Allow-Origin: *`) **cannot be combined with credentials** (`Access-Control-Allow-Credentials: true`). We configure an explicit origin whitelist (`http://localhost:3000`) so the Next.js frontend can safely read backend API responses while disallowing unauthorized external origins.
 
 ### Q3: Why did we choose FastAPI over Flask or Django for this GIS/ML API?
 > **Answer:** 
-> 1. **Asynchronous Concurrency:** Built on Starlette and ASGI, FastAPI handles asynchronous I/O natively, essential when streaming spatial geometries or awaiting database queries.
-> 2. **Type Safety & Automatic Validation:** Leverages Pydantic schemas to validate incoming spatial coordinates, filters, and bounding boxes at the boundary.
+> 1. **Modern ASGI Architecture:** Built on Starlette, FastAPI supports asynchronous Python natively. However, it is essential to note that async only yields I/O concurrency gains if the underlying database driver and calls are also non-blocking (e.g., using `asyncpg` rather than synchronous `psycopg2`). We will formally evaluate and decide on the async vs. sync database driver in Phase 3.
+> 2. **Type Safety & Automatic Validation:** Leverages Pydantic schemas to validate incoming spatial coordinates, filters, and bounding boxes at the API boundary before execution.
 > 3. **Interactive Documentation:** Generates interactive Swagger (`/docs`) and ReDoc (`/redoc`) specifications automatically from Python type hints, simplifying frontend-backend integration and examiner demonstration.
 
 ### Q4: How does Pydantic improve API reliability and security?
@@ -58,3 +58,25 @@ This document records the theoretical foundations, architectural rationale, and 
 
 ### Q6: What purpose does the `/api/health` endpoint serve in operational systems?
 > **Answer:** `/api/health` is a standardized liveness and readiness probe. Container orchestrators (Docker, Kubernetes) and cloud platforms use it to verify whether the service process is responsive before routing traffic. In our architecture, the Next.js frontend polls this endpoint to detect backend outages and gracefully notify users ("Disconnected") instead of throwing unhandled exceptions.
+
+---
+
+## Phase 2: Data Feasibility Spike & Scientific Modeling Foundations
+
+### Q1: Why does the empirical data audit restrict the ML scope to static susceptibility rather than dynamic temporal hazard?
+> **Answer:** The Phase 2 data audit across NASA GLC (442 NER events) and ISRO's Landslide Atlas reveals that while historical events have reporting dates, these dates correspond to when news agencies or road clearance teams documented infrastructure damage, not the microsecond of shear failure. Furthermore, dynamic temporal modeling requires continuous true absence records (knowing that at slope $S$ and time $T$, no failure occurred). Catalogs only record presences that caused societal impact. Attempting to fit time-series ML models on media reporting dates creates severe temporal data leakage. Susceptibility modeling (spatial likelihood based on static terrain) is scientifically sound and methodologically honest.
+
+### Q2: What is spatial reporting bias, and how does it manifest in the North Eastern Region?
+> **Answer:** Reporting bias occurs because human observation is concentrated where people live and travel. In the NER catalog, 80%+ of recorded landslides cluster tightly along National Highways (e.g., NH-10 in Sikkim, NH-2 in Manipur) and major towns. Remote, densely forested slopes experience countless unrecorded slope failures. If an ML model is trained without spatial balancing, it will mistakenly learn that proximity to asphalt roads causes landslides. Spatial block cross-validation and environmental stratification in Phase 6 will counteract this bias.
+
+### Q3: Why is presence-only data challenging in landslide modeling, and how will negative labels be sampled?
+> **Answer:** Landslide catalogs provide positive coordinates (presence). Binary classifiers (Logistic Regression, Random Forest, XGBoost) require negative samples (absence). Because true absence is unobserved, we must generate "pseudo-absences" following a strict, documented rule: sampling points within the study area located outside a buffer zone (e.g., 200m–500m) around known events, while ensuring they fall on terrain physically eligible for failure (e.g., avoiding completely flat riverbeds where landslides are physically impossible).
+
+### Q4: Why is Copernicus DEM GLO-30 superior to NASA SRTM for terrain analysis in the Himalayas?
+> **Answer:** NASA SRTM was acquired in February 2000 using C-band radar and suffers from significant data voids (missing pixels) in steep Himalayan valleys and shadowed gorges due to radar layover and foreshortening. Copernicus DEM GLO-30 (derived from the TanDEM-X mission, ~2015–2020) offers a modern, void-filled 30-meter digital surface model with superior vertical accuracy and artifact reduction across complex, high-relief mountain topography.
+
+### Q5: Why must rainfall data be presented as an independent indicator rather than combined via an invented formula?
+> **Answer:** Non-Negotiable Rule 1.1 strictly forbids inventing uncalibrated mathematical formulas (e.g., $\text{Score} = 0.6 \times \text{ML} + 0.4 \times \text{Rain}$). Dynamic rainfall thresholds (e.g., Caine's intensity-duration threshold $I = \alpha D^{-\beta}$) require localized empirical gauge calibration. Until rainfall thresholds are validated against specific slope catchments, rainfall is presented honestly as an environmental indicator (e.g., 3-day and 7-day cumulative precipitation relative to historical monsoonal percentiles) evaluated via a transparent, documented rule matrix.
+
+### Q6: What is the scientific justification for choosing East Sikkim as the primary study area?
+> **Answer:** East Sikkim (Gangtok district) is ranked #9 nationally in the ISRO Landslide Atlas 2023 for landslide risk exposure. It possesses dense historical event documentation along critical transit routes (NH-10), extreme topographic relief (~300m to >4,000m), and high monsoonal vulnerability. Its compact area (~964 $\text{km}^2$) allows regular 100m grid cell discretization (~96,000 cells), perfectly matching the 30m resolution of Copernicus DEM and remaining within cloud database storage constraints without downscaling.
