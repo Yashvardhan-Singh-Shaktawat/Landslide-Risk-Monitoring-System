@@ -176,7 +176,7 @@ Target pacing for 8 weeks (compress for 6): W1 = P0–P1, W2 = P2–P3, W3 = P4�
 **Acceptance:** versions confirmed; plan and checklist written; no existing file overwritten.
 
 ## PHASE 1 — Foundation (frontend ↔ backend)
-**Agent does:** create the folder structure; Next.js + Tailwind (check current Node requirement first); Python 3.12 venv; FastAPI with `/` and `/api/health`; CORS for `http://localhost:3000`; a home page that fetches and **displays the real health result**; `.env.example` files; `.gitignore`; first commit.
+**Agent does:** create the folder structure; Next.js + Tailwind (requires Node.js 20.9.0 or later per official Next.js documentation; Node v22 LTS confirmed); Python 3.12 venv (created via `py -3.12 -m venv .venv`); FastAPI with `/` and `/api/health`; CORS for `http://localhost:3000`; a home page that fetches and **displays the real health result**; `.env.example` files; `.gitignore`; first commit.
 **OWNER:** create the GitHub repo (private) and push; open the two terminals and run both servers.
 **Acceptance:** frontend on `localhost:3000`; backend on `localhost:8000`; `/docs` opens; the page shows "healthy" only when the API truly responds, and "Disconnected" when you stop the backend (test both).
 
@@ -291,3 +291,4 @@ If Phase 2 shows too few usable events:
 # 11. FIRST TASK
 
 Execute **PHASE 0 only**. Inspect first. Do not assume anything about my files or installed software. When finished, show the Phase-end report from Section 6 and wait for my approval.
+

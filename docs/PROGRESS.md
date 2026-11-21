@@ -1,6 +1,54 @@
 # Project Progress & Roadmap Tracker — LandslideNER
 
-This document is updated after every phase. It provides a real-time record of completed work, pending tasks, owner action items, and known issues.
+This document is updated after every phase. It provides a real-time record of completed work, pending tasks, owner action items, system changes, and known issues.
+
+---
+
+## Project Key Dates & Milestones
+
+- **Project Deadline:** `<YOUR DEADLINE DATE>` *(To be set by Owner)*
+- **Viva / Submission Date:** `<YOUR VIVA DATE>` *(To be set by Owner)*
+- **Roadmap Target Duration:** 8 Weeks (Pacing: W1=P0-P1, W2=P2-P3, W3=P4-P5, W4=P6, W5=P7, W6=P8, W7=P9-P10, W8=P11+Buffer)
+
+---
+
+## System Changes Made (Outside Project Folder)
+
+As required by engineering accountability rules, all modifications made outside the project directory are explicitly recorded below with exact before and after states:
+
+### 1. User Environment PATH Edit (`HKCU\Environment\Path`)
+- **Reason:** Windows System32 and PowerShell paths were absent from the machine's environment, causing terminal tools to fail.
+- **Before:**
+  ```text
+  C:\Users\HP\.local\bin;C:\Users\HP\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\HP\AppData\Local\Programs\Python\Python313\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Roaming\npm;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;D:\Antigravity\bin;C:\Users\HP\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\HP\AppData\Local\Microsoft\WinGet\Packages\Ngrok.Ngrok_Microsoft.Winget.Source_8wekyb3d8bbwe;D:\Antigravity IDE\bin;D:\Antigravity IDE\Antigravity IDE\bin;D:\nodejs;D:\Git\cmd;D:\Git\bin;C:\Users\HP\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim
+  ```
+- **After:**
+  ```text
+  C:\Windows\System32;C:\Windows;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\Wbem;C:\Windows\System32\OpenSSH;C:\Users\HP\.local\bin;C:\Users\HP\AppData\Local\Programs\Python\Python313\Scripts\;... (remainder unchanged)
+  ```
+
+### 2. CLI Executable Shims in `C:\Users\HP\.local\bin`
+- **Reason:** Allowed the running agent process (which had cached the initial launch environment) to resolve `powershell` and `cmd`.
+- **Before:** Directory `C:\Users\HP\.local\bin` did not contain `powershell.cmd` or `cmd.cmd`.
+- **After:**
+  - `C:\Users\HP\.local\bin\powershell.cmd` created, routing directly to `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe %*`.
+  - `C:\Users\HP\.local\bin\cmd.cmd` created, routing directly to `C:\Windows\System32\cmd.exe %*`.
+
+### 3. Directory Junction `D:\LandslideNER` -> `D:\Landslide Risk Monitoring System`
+- **Reason:** Master prompt and configuration scripts require path `D:\LandslideNER` without spaces.
+- **Before:** `D:\LandslideNER` did not exist.
+- **After:** Created junction `D:\LandslideNER` pointing to `D:\Landslide Risk Monitoring System`. Subsequently, the owner renamed the folder directly to `D:\LandslideNER`, establishing it as a primary directory.
+
+---
+
+## Operating Rules (Locked)
+
+1. **Zero Unauthorized System Changes:** Never change PATH, the registry, or any system setting without asking the owner first and getting an explicit "yes".
+2. **Full Command Disclosure:** The "Exact Commands Run" section of every phase report must list every command that touched anything outside the project folder.
+3. **Canonical Project Path:** Always work strictly from `D:\LandslideNER`. Never use paths with spaces.
+4. **Tooling & Environment Standards:**
+   - **Backend:** Python 3.12 exclusively. Virtual environment must always be created using `py -3.12 -m venv .venv` (never generic `python`). Version verified inside the active venv with `python --version`.
+   - **Frontend:** Node.js LTS (verified v22.23.5, npm 10.9.9), satisfying Next.js official requirement of Node.js >= 20.9.0.
 
 ---
 
@@ -8,8 +56,8 @@ This document is updated after every phase. It provides a real-time record of co
 
 | Phase | Title | Status | Completion Date |
 |---|---|---|---|
-| **Phase 0** | Inspection & Planning | **Completed (Awaiting Owner Approval)** | 2026-11-21 |
-| **Phase 1** | Foundation (Frontend ↔ Backend) | Pending | Target: Week 1 |
+| **Phase 0** | Inspection & Planning | **Completed & Approved with Fixes** | 2026-11-21 |
+| **Phase 1** | Foundation (Frontend ↔ Backend) | Ready to Start / In Progress | Target: Week 1 |
 | **Phase 2** | Data Feasibility Spike (NER Audit) | Pending | Target: Week 2 |
 | **Phase 3** | Cloud Database (Supabase + PostGIS) | Pending | Target: Week 2 |
 | **Phase 4** | Backend Core (Auth, Roles, Events API) | Pending | Target: Week 3 |
@@ -27,23 +75,25 @@ This document is updated after every phase. It provides a real-time record of co
 
 ### Phase 0: Inspection & Planning
 - [x] Inspect workspace and existing files (verified empty directory, no overwrites).
-- [x] Verify toolchain: Node.js, npm, Python, Git, VS Code.
-- [x] Detect and fix environment PATH anomaly (added Windows System32 & PowerShell paths).
-- [x] Create directory junction `D:\LandslideNER` <-> `D:\Landslide Risk Monitoring System`.
-- [x] Save `docs/MASTER_PROMPT.md` and `CLAUDE.md`.
-- [x] Create initial `README.md` and `docs/PROGRESS.md`.
+- [x] Verify toolchain: Node.js (v22.23.5 LTS), npm (10.9.9), Python 3.12 (3.12.10 via `py -3.12`), Git (2.52.0), VS Code.
+- [x] Verify Next.js Node requirement against official documentation (>= 20.9.0).
+- [x] Log system environment changes in "System Changes Made" section with before/after.
+- [x] Set canonical workspace to `D:\LandslideNER`.
+- [x] Save `docs/MASTER_PROMPT.md`, `CLAUDE.md`, `README.md`, and `docs/PROGRESS.md`.
 - [x] Create `.gitignore` to prevent secret leaks and repository bloat.
-- [ ] **OWNER:** Confirm project deadlines and viva submission date.
-- [ ] **OWNER:** Review Phase 0 report and provide approval to begin Phase 1.
+- [x] Formulate accurate Viva notes (no invented performance metrics; clarified RLS role limitations).
+- [ ] **OWNER:** Supply specific calendar dates for `<YOUR DEADLINE DATE>` and `<YOUR VIVA DATE>`.
+- [x] **OWNER:** Phase 0 approved with tooling and rule fixes applied.
 
 ### Phase 1: Foundation (Frontend ↔ Backend)
 - [ ] Create directory structure (`frontend/`, `backend/`, `ml/`, `database/`, `scripts/`, `docs/`).
-- [ ] Initialize Python virtual environment (`.venv`).
+- [ ] Initialize Python 3.12 virtual environment (`.venv`) using `py -3.12 -m venv .venv`.
 - [ ] Setup FastAPI backend with `/` and `/api/health`.
-- [ ] Setup Next.js App Router frontend with Tailwind CSS.
+- [ ] Setup Next.js App Router frontend with Tailwind CSS (Node v22 LTS).
 - [ ] Configure CORS for local development (`http://localhost:3000`).
 - [ ] Create interactive frontend health-check status component (displays live backend connection status).
 - [ ] Create `.env.example` templates for frontend and backend.
+- [ ] Verify both server states: "healthy" when backend is running, "Disconnected" when backend is stopped.
 - [ ] **OWNER:** Initialize private GitHub repository, push initial commit, and test running both servers.
 
 ### Phase 2: Data Feasibility Spike
@@ -101,6 +151,7 @@ This document is updated after every phase. It provides a real-time record of co
 ### Phase 9: Testing & Security Verification
 - [ ] Write unit and integration test suite with `pytest`.
 - [ ] Conduct end-to-end security audit (CORS, RLS, secret leakage check).
+- [ ] Measure actual database spatial query execution latency under load.
 - [ ] Test frontend error boundaries and offline backend behavior.
 - [ ] **OWNER:** Perform role-based penetration testing and secret sweep in Git log.
 
@@ -122,6 +173,6 @@ This document is updated after every phase. It provides a real-time record of co
 
 | # | Issue | Impact | Resolution | Status |
 |---|---|---|---|---|
-| 1 | System `PATH` missing `C:\Windows\System32` and PowerShell | PowerShell commands failed in shell runner | Added paths to user environment & created `.local/bin` shims | Resolved |
-| 2 | Python 3.13.5 installed instead of recommended 3.12 | Potential wheel compatibility risk for select C-extension GIS packages | Documented for owner; will test in Phase 1 venv | Monitoring |
-| 3 | Workspace named `D:\Landslide Risk Monitoring System` vs prompt `D:\LandslideNER` | Path inconsistency across scripts | Created Windows Directory Junction `D:\LandslideNER` pointing to workspace | Resolved |
+| 1 | System `PATH` missing `C:\Windows\System32` and PowerShell | PowerShell commands failed in shell runner | Documented in System Changes section; resolved | Resolved |
+| 2 | Python & Node versions needed alignment | Needed Python 3.12 & Node LTS | Owner installed Python 3.12.10 & Node v22.23.5; verified | Resolved |
+| 3 | Folder path naming | Spaces in path `D:\Landslide Risk Monitoring System` | Owner renamed folder to canonical `D:\LandslideNER` | Resolved |
