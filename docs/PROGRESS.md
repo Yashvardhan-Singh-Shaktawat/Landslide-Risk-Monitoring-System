@@ -57,7 +57,7 @@ As required by engineering accountability rules, all modifications made outside 
 | Phase | Title | Status | Completion Date |
 |---|---|---|---|
 | **Phase 0** | Inspection & Planning | **Completed & Approved with Fixes** | 2026-11-21 |
-| **Phase 1** | Foundation (Frontend ↔ Backend) | Ready to Start / In Progress | Target: Week 1 |
+| **Phase 1** | Foundation (Frontend ↔ Backend) | **Completed (Awaiting Owner Verification & Push)** | 2026-11-21 |
 | **Phase 2** | Data Feasibility Spike (NER Audit) | Pending | Target: Week 2 |
 | **Phase 3** | Cloud Database (Supabase + PostGIS) | Pending | Target: Week 2 |
 | **Phase 4** | Backend Core (Auth, Roles, Events API) | Pending | Target: Week 3 |
@@ -86,15 +86,18 @@ As required by engineering accountability rules, all modifications made outside 
 - [x] **OWNER:** Phase 0 approved with tooling and rule fixes applied.
 
 ### Phase 1: Foundation (Frontend ↔ Backend)
-- [ ] Create directory structure (`frontend/`, `backend/`, `ml/`, `database/`, `scripts/`, `docs/`).
-- [ ] Initialize Python 3.12 virtual environment (`.venv`) using `py -3.12 -m venv .venv`.
-- [ ] Setup FastAPI backend with `/` and `/api/health`.
-- [ ] Setup Next.js App Router frontend with Tailwind CSS (Node v22 LTS).
-- [ ] Configure CORS for local development (`http://localhost:3000`).
-- [ ] Create interactive frontend health-check status component (displays live backend connection status).
-- [ ] Create `.env.example` templates for frontend and backend.
-- [ ] Verify both server states: "healthy" when backend is running, "Disconnected" when backend is stopped.
-- [ ] **OWNER:** Initialize private GitHub repository, push initial commit, and test running both servers.
+- [x] Create project directory structure (`frontend/`, `backend/`, `ml/`, `database/`, `scripts/`, `docs/`).
+- [x] Initialize Python 3.12 virtual environment (`.venv`) using `py -3.12 -m venv .venv`.
+- [x] Verify Python version inside active venv (`Python 3.12.10`).
+- [x] Build FastAPI backend (`backend/app/main.py`) with `/` and `/api/health`.
+- [x] Configure CORS middleware for `http://localhost:3000` and `http://127.0.0.1:3000`.
+- [x] Create Pydantic schemas and test suite (`backend/app/tests/test_health.py`); verify passing with `pytest`.
+- [x] Build Next.js App Router frontend with Tailwind CSS and Lucide icons.
+- [x] Implement live health polling component with visual status badges, latency tracking, and error handling.
+- [x] Create `.env.example` templates for frontend and backend.
+- [x] Verify both server states: "healthy" when backend is running, "Disconnected" when backend is stopped.
+- [x] Test production build of Next.js frontend (`npm run build` completed with code 0).
+- [ ] **OWNER:** Initialize private GitHub repository, push initial commit, and run both servers in separate PowerShell terminals.
 
 ### Phase 2: Data Feasibility Spike
 - [ ] Audit historical landslide inventories for NER (NASA GLC, GSI/Bhukosh, ISRO-NRSC Bhuvan).

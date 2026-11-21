@@ -33,3 +33,28 @@ This document records the theoretical foundations, architectural rationale, and 
 > **Answer:** 
 > - **Frontend:** Next.js (App Router) officially requires Node.js 20.9.0 or later. We utilize Node.js v22 LTS (v22.23.5) with npm 10.9.9.
 > - **Backend:** Python 3.12 (specifically Python 3.12.10 via `py -3.12`), chosen for guaranteed binary wheel compatibility with C-based geospatial libraries (GDAL, Shapely, GeoAlchemy2, psycopg) on Windows.
+
+---
+
+## Phase 1: Foundation (Architecture, Web Frameworks, and Health Check)
+
+### Q1: Why separate the Next.js frontend server and the FastAPI backend server instead of building a monolithic full-stack app in Next.js?
+> **Answer:** Separation of concerns. Next.js excels at server-rendered React user interfaces, dynamic client caching, and modern GIS map rendering. FastAPI is purpose-built for high-performance Python services with native support for asynchronous event loops, automated OpenAPI documentation, Pydantic type validation, and seamless integration with Python's geospatial/scientific ecosystem (GeoAlchemy2, Shapely, NumPy, Scikit-Learn, Joblib). Keeping them decoupled allows independent scaling, deployment, and testing.
+
+### Q2: What is Cross-Origin Resource Sharing (CORS), and why must it be configured strictly?
+> **Answer:** CORS is a browser security mechanism that restricts web applications running on one origin (e.g., `http://localhost:3000`) from requesting resources from a different origin (e.g., `http://localhost:8000`) unless the server explicitly permits it via `Access-Control-Allow-Origin` headers. Wildcard allowances (`*`) in production create serious security risks (e.g., malicious sites invoking authenticated API endpoints via credentialed requests). We configure explicit origin whitelists (`localhost:3000`).
+
+### Q3: Why did we choose FastAPI over Flask or Django for this GIS/ML API?
+> **Answer:** 
+> 1. **Asynchronous Concurrency:** Built on Starlette and ASGI, FastAPI handles asynchronous I/O natively, essential when streaming spatial geometries or awaiting database queries.
+> 2. **Type Safety & Automatic Validation:** Leverages Pydantic schemas to validate incoming spatial coordinates, filters, and bounding boxes at the boundary.
+> 3. **Interactive Documentation:** Generates interactive Swagger (`/docs`) and ReDoc (`/redoc`) specifications automatically from Python type hints, simplifying frontend-backend integration and examiner demonstration.
+
+### Q4: How does Pydantic improve API reliability and security?
+> **Answer:** Pydantic enforces data contracts using Python type annotations. If an incoming request contains invalid coordinate formats, out-of-range dates, or malformed JSON, Pydantic automatically rejects it with clear 422 Unprocessable Entity errors before application logic executes. For outgoing responses, it guarantees schema conformance and strips undeclared internal fields, preventing accidental data leakage.
+
+### Q5: Why is `.env` excluded from version control while `.env.example` is committed?
+> **Answer:** `.env` contains local runtime configuration and sensitive credentials (database passwords, Supabase service keys, JWT secrets). Committing `.env` to Git exposes credentials permanently in repository history. Committing `.env.example` provides team members and evaluators with a documented template of all required environment variables without leaking private secrets.
+
+### Q6: What purpose does the `/api/health` endpoint serve in operational systems?
+> **Answer:** `/api/health` is a standardized liveness and readiness probe. Container orchestrators (Docker, Kubernetes) and cloud platforms use it to verify whether the service process is responsive before routing traffic. In our architecture, the Next.js frontend polls this endpoint to detect backend outages and gracefully notify users ("Disconnected") instead of throwing unhandled exceptions.
