@@ -9,3 +9,4 @@ class HealthResponse(BaseModel):
     environment: str = Field(description="Current running environment")
     timestamp: datetime = Field(description="UTC timestamp of the health check")
     disclaimer: str = Field(description="Academic prototype disclaimer")
+

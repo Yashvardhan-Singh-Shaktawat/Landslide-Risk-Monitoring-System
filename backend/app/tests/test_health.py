@@ -22,3 +22,4 @@ async def test_health_endpoint():
     assert data["status"] == "healthy"
     assert "version" in data
     assert "timestamp" in data
+
