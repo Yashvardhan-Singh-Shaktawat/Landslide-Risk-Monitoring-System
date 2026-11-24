@@ -1,0 +1,458 @@
+event_id,import_source,pip_state,pip_district,latitude,longitude,location_accuracy,acc_km,dist_state_km,dist_dist_km,state_uncertain,district_uncertain,event_date,event_title,location_description
+1061,glc,Sikkim,North Sikkim,27.478,88.527,1km,1.0,25.11,9.03,False,False,07/01/2009 05:40:00 AM,Bridge destroyed at 4th Mile,"4th Mile, Lower Mangshila in North Sikkim"
+2164,glc,Manipur,Ukhrul,25.3098633,94.48214677,25km,25.0,11.94,11.68,True,True,07/29/2010 11:00:00 PM,"Chingai-Kuingai(Quingai) route (16 kms), Chingai subdivision, Ukhrul district, Manipur","Chingai-Kuingai(Quingai) route (16 kms), Chingai subdivision, Ukhrul district, Manipur"
+4569,glc,Sikkim,North Sikkim,27.8385,88.556,10km,10.0,22.13,22.13,False,False,09/19/2012 12:00:00 AM,"North Skkimm Hwy between, Chungthang and Mangan, North Skimm (9 landslides)","North Skkimm Hwy between, Chungthang and Mangan, North Skimm (9 landslides)"
+4571,glc,Sikkim,North Sikkim,27.6558,88.605,10km,10.0,18.8,18.8,False,False,09/19/2012 12:00:00 AM," Chungthang and Pegong. Houses, between Rangma and Chungthang "," Chungthang and Pegong. Houses, between Rangma and Chungthang "
+5122,glc,Nagaland,Dimapur,25.7658,93.9413,50km,50.0,10.66,3.01,True,True,07/17/2013 12:00:00 AM,"National Highway 29 Between Patkai Bridge And Kukidolong, Nagaland","National Highway 29 Between Patkai Bridge And Kukidolong, Nagaland"
+5123,glc,Nagaland,Kohima,25.7131,94.0885,50km,50.0,14.73,12.2,True,True,07/17/2013 12:00:00 AM,"National Highway 2 Near Meriema Village, 10 Km Away From Kohima","National Highway 2 Near Meriema Village, 10 Km Away From Kohima"
+7370,glc,Manipur,Chandel,24.1419,94.1078,5km,5.0,15.2,15.2,False,False,08/01/2015 12:00:00 AM,between Moltuk to New Songjang village,between Moltuk to New Songjang village
+5084,glc,Nagaland,Kohima,25.616,94.1167,10km,10.0,6.98,6.98,True,True,07/12/2013 11:00:00 PM,"National Highway 2 Near Phesama Village Close To Kisama Naha Heritage Site, Kohima District, Nagaland","National Highway 2 Near Phesama Village Close To Kisama Naha Heritage Site, Kohima District, Nagaland"
+2566,glc,Manipur,Senapati,25.4769,94.1351,5km,5.0,5.22,5.22,False,False,10/08/2010 12:00:00 AM,"Sahong, Tabu and Pani village under Tadubi police station of Senapati district, NH-39","Sahong, Tabu and Pani village under Tadubi police station of Senapati district, NH-39"
+1109,glc,Assam,North Cachar Hills,25.5215,93.1645,25km,25.0,17.02,5.61,True,True,08/20/2009 12:00:00 AM,Lumding-Badarpur section in North Cachar Hills district,Lumding-Badarpur section in North Cachar Hills district
+1961,glc,Assam,Kamrup,25.8833,91.2,50km,50.0,2.72,2.72,True,True,06/09/2010 02:15:00 PM,"Ishok Chingphu(?), Bishnupur, Assam","Ishok Chingphu(?), Bishnupur, Assam"
+2578,glc,Manipur,Senapati,25.3179,94.0462,5km,5.0,24.22,9.1,False,False,10/09/2010 12:00:00 AM,"NH-39 in Karong area, Manipur","NH-39 in Karong area, Manipur"
+322,glc,Manipur,Tamenglong,24.75,93.4333,25km,25.0,24.76,19.44,True,True,10/21/2007 12:00:00 AM,National Highway 53 at Nungba in Tamenglong district of Manipur,National Highway 53 at Nungba in Tamenglong district of Manipur
+5552,glc,Manipur,Ukhrul,25.0985,94.3619,5km,5.0,26.01,16.83,False,False,09/24/2013 12:00:00 AM,"Ukhrul, Manipur","Ukhrul, Manipur"
+7031,glc,Sikkim,North Sikkim,27.6163,88.6586,1km,1.0,12.05,12.05,False,False,05/24/2015 12:00:00 AM,"Bop, Sikkim","Bop, Sikkim"
+2025,glc,Meghalaya,East Khasi Hills,25.5728,91.885,5km,5.0,29.77,8.13,False,False,06/28/2010 12:00:00 AM,"Police CID complex(?), Shillong, Meghalaya","Police CID complex(?), Shillong, Meghalaya"
+9405,glc,Nagaland,Mon,26.7223,95.0243,1km,1.0,17.27,17.27,False,False,04/19/2016 12:00:00 AM,"Techahan Ward, Mon, Nagaland, India","Techahan Ward, Mon, Nagaland, India"
+5343,glc,Manipur,Tamenglong,24.7625,93.4341,10km,10.0,24.32,20.82,False,False,08/17/2013 11:00:00 PM,The Imphal-Jiribam Section Of Nh-37 In Tamenglong District,The Imphal-Jiribam Section Of Nh-37 In Tamenglong District
+6971,glc,Arunachal Pradesh,Papum Pare,27.0987,93.816,5km,5.0,1.06,1.06,True,True,06/09/2015 12:00:00 AM,"Itanagar, Arunachal Pradesh","Itanagar, Arunachal Pradesh"
+57,glc,Sikkim,North Sikkim,27.4459,88.6193,5km,5.0,16.18,6.33,False,False,04/11/2007 12:00:00 AM,"Sikkim, 13 km north of Gangtok","Sikkim, 13 km north of Gangtok"
+1611,glc,Assam,North Cachar Hills,25.1553,93.028,25km,25.0,23.6,5.45,True,True,04/01/2010 12:00:00 AM,"Paglanala village, Dholai Block, near Dwarbandh locality of the district, Cachar district (could only find district) 45 km from Silchar, Assam","Paglanala village, Dholai Block, near Dwarbandh locality of the district, Cachar district (could only find district) 45 km from Silchar, Assam"
+147,glc,Mizoram,Lawngtlai,22.533,92.899,25km,25.0,21.84,2.3,True,True,07/30/2007 12:00:00 AM,Lawngtlai,Lawngtlai
+4382,glc,Assam,North Cachar Hills,25.1175,92.8573,5km,5.0,12.2,5.57,False,False,06/03/2012 12:00:00 AM," between Harangajao and Mailongdisa, Assa,"," between Harangajao and Mailongdisa, Assa,"
+2424,glc,Mizoram,Aizawl,23.591,92.9296,25km,25.0,49.57,8.17,False,True,09/13/2010 12:00:00 AM,"near Tuivawl(?), Aizawl-Champhai rd, Aizawl district, Mizoram","near Tuivawl(?), Aizawl-Champhai rd, Aizawl district, Mizoram"
+78,glc,Sikkim,East,27.3383,88.6069,50km,50.0,16.07,5.51,True,True,05/23/2007 12:00:00 AM,"Pangthang, on road b/t Gangtok and North Sikkim","Pangthang, on road b/t Gangtok and North Sikkim"
+5431,glc,Manipur,Tamenglong,24.9829,93.5063,5km,5.0,21.29,21.29,False,False,09/01/2013 12:00:00 AM,"Tamenglong, Manipur","Tamenglong, Manipur"
+3672,glc,Assam,North Cachar Hills,25.5125,93.3613,unknown,,0.46,0.46,False,False,06/29/2011 12:00:00 AM,"Portions of NH 39, Connectin Manipur with Assam via Nagaland","Portions of NH 39, Connectin Manipur with Assam via Nagaland"
+3997,glc,Sikkim,North Sikkim,27.5161,88.5575,10km,10.0,21.31,13.58,False,False,09/30/2011 12:00:00 AM,Mangan : The slide which occurred at Thingchim around 18 kilometers from Mangan towards Gangtok has disrupted the Mangan-Gangtok traffic again. The s*,
+2253,glc,Manipur,Ukhrul,25.31006064,94.48265093,25km,25.0,11.89,11.71,True,True,08/15/2010 11:00:00 PM,"Chingai-Kuingai(Quingai) route (16 kms), Chingai subdivision, Ukhrul district, Manipur","Chingai-Kuingai(Quingai) route (16 kms), Chingai subdivision, Ukhrul district, Manipur"
+1108,glc,Manipur,Tamenglong,24.9925,93.5,10km,10.0,20.15,20.15,False,False,08/20/2009 12:00:00 AM,"Tamei, Tamenglong district on Imphal-Tamenglong (IT) road","Tamei, Tamenglong district on Imphal-Tamenglong (IT) road"
+9168,glc,Arunachal Pradesh,Lower Subansiri,27.6438,93.871,10km,10.0,33.68,17.88,False,False,06/12/2016 11:00:00 PM,"NH 13 10 kilometers from Old Ziro, Arunachal Pradesh, India","NH 13 10 kilometers from Old Ziro, Arunachal Pradesh, India"
+3560,glc,Manipur,Tamenglong,24.8286,93.5935,50km,50.0,35.77,8.13,True,True,05/31/2011 02:30:00 PM,"Gaoilung(Gadailong) village(?), Ward 4(?), Tamenglong, Manipur","Gaoilung(Gadailong) village(?), Ward 4(?), Tamenglong, Manipur"
+587,glc,Assam,Lakhimpur,27.2298,94.0989,25km,25.0,14.79,14.79,True,True,06/15/2008 12:00:00 AM,"Lakhimpur district, Bihpuria, Assam","Lakhimpur district, Bihpuria, Assam"
+8012,glc,Meghalaya,Ri-Bhoi,25.9703,91.8584,1km,1.0,6.96,6.96,False,False,09/06/2015 03:00:00 PM,"Umling, Meghalaya 793102, India","Umling, Meghalaya 793102, India"
+7335,glc,Meghalaya,West Garo Hills,25.5145,90.2023,1km,1.0,20.97,12.87,False,False,08/18/2015 09:00:00 AM,Tura Civil Hospital,Tura Civil Hospital
+141,glc,Meghalaya,East Khasi Hills,25.38,91.88,50km,50.0,21.85,15.6,True,True,07/26/2007 12:00:00 AM,Singtam,Singtam
+3983,glc,Assam,Kamrup,26.1548,91.7351,unknown,,8.29,5.66,False,False,09/23/2011 12:00:00 AM,"Maighuli, Guwahati, Meghalaya","Maighuli, Guwahati, Meghalaya"
+148,glc,Mizoram,Saiha,22.479,92.967,25km,25.0,15.98,2.19,True,True,07/30/2007 12:00:00 AM,Saiha,Saiha
+1775,glc,Arunachal Pradesh,Lohit,27.8965,96.1779,unknown,,21.26,20.37,False,False,04/21/2010 12:00:00 AM,Arunachal Pradesh ,Arunachal Pradesh 
+3663,glc,Nagaland,Kohima,25.6682,94.1099,50km,50.0,11.6,10.75,True,True,06/28/2011 12:00:00 AM,"Ruzapfu valley, Kikruma Village, Phek District, Nagaland","Ruzapfu valley, Kikruma Village, Phek District, Nagaland"
+7385,glc,Manipur,Chandel,24.004,93.9815,10km,10.0,6.61,6.61,True,True,08/01/2015 12:00:00 AM,"Holenjang, Chandel district","Holenjang, Chandel district"
+3643,glc,Sikkim,West Sikkim,27.2879,88.2579,5km,5.0,17.53,1.61,False,True,06/23/2011 11:30:00 PM,Villages surrounding the West Sikkim district of ,Villages surrounding the West Sikkim district of 
+2575,glc,Assam,North Cachar Hills,25.5242,92.9914,50km,50.0,29.76,19.99,True,True,10/09/2010 12:00:00 AM,"road between Haflong and Lanka, Assam","road between Haflong and Lanka, Assam"
+3840,glc,Manipur,Thoubal,24.6869,93.9157,50km,50.0,54.02,0.51,False,True,07/25/2011 12:00:00 AM,Manipur,Manipur
+6015,glc,Arunachal Pradesh,Lohit,27.9032,96.174,1km,1.0,20.63,19.7,False,False,05/08/2014 12:00:00 AM,Lohit District of Arunachal Pradesh,Lohit District of Arunachal Pradesh
+3741,glc,Manipur,Senapati,25.4191,94.1079,5km,5.0,12.03,12.03,False,False,07/07/2011 12:00:00 AM,Maram (80 km north of Imphal),Maram (80 km north of Imphal)
+2106,glc,Nagaland,Mon,26.8716,94.9921,25km,25.0,5.15,5.15,True,True,07/20/2010 12:00:00 AM,"road to Oting near Longlam village, 13 km from Tizit subdivision, Mon district, Nagaland","road to Oting near Longlam village, 13 km from Tizit subdivision, Mon district, Nagaland"
+9051,glc,Meghalaya,Ri-Bhoi,26.09748244,91.8744337,25km,25.0,0.06,0.06,True,True,07/19/2016 09:00:00 AM,"12th Mile area at Jorabat, Meghalaya, India","12th Mile area at Jorabat, Meghalaya, India"
+870,glc,Arunachal Pradesh,West Kameng,27.4,92.35,50km,50.0,25.87,25.87,True,True,10/29/2008 12:00:00 AM,"West Kameng, Arunachal Pradesh","West Kameng, Arunachal Pradesh"
+2392,glc,Sikkim,East,27.3702,88.7334,10km,10.0,8.45,5.13,True,True,09/04/2010 12:00:00 AM,"17th mile(?), Jawaharlal Nehru Marg hwy, between Gangtok and Nathu La, Sikkim","17th mile(?), Jawaharlal Nehru Marg hwy, between Gangtok and Nathu La, Sikkim"
+3830,glc,Manipur,Chandel,24.3527,94.3429,10km,10.0,1.45,1.45,True,True,07/22/2011 12:00:00 AM,Manipur,Manipur
+4906,glc,Nagaland,Tuensang,26.0977,94.7499,10km,10.0,33.87,5.51,False,True,06/07/2013 12:00:00 AM,"Helipong-Chessore Road, Nagaland","Helipong-Chessore Road, Nagaland"
+3269,glc,Arunachal Pradesh,Lohit,28.0791,96.5242,10km,10.0,31.71,31.0,False,False,03/22/2011 12:00:00 AM,"road from other districts to Hawai(Tawai?) which is  on Lojit river, near Hayuliang,  Anjaw district, Arunachal Pradesh","road from other districts to Hawai(Tawai?) which is  on Lojit river, near Hayuliang,  Anjaw district, Arunachal Pradesh"
+1755,glc,Sikkim,East,27.3341,88.6083,5km,5.0,15.62,5.97,False,False,04/17/2010 03:00:00 PM,"Natl. Highway 31-A at Pani House(?), Gangtok","Natl. Highway 31-A at Pani House(?), Gangtok"
+6990,glc,Nagaland,Zunheboto,26.0319,94.5466,5km,5.0,37.26,10.98,False,False,06/24/2015 12:00:00 AM,"New Land (""""New Colony"""")","New Land (""""New Colony"""")"
+6222,glc,Arunachal Pradesh,Papum Pare,27.1249,93.7706,5km,5.0,2.95,2.95,True,True,10/01/2014 11:00:00 AM,Karsingsa block point,Karsingsa block point
+9169,glc,Nagaland,Wokha,26.1677,94.2442,100km,100.0,20.15,9.5,True,True,06/12/2016 12:00:00 AM,"on road between Mon and Tobu near Telangsao Hydro project , Nagaland, India","on road between Mon and Tobu near Telangsao Hydro project , Nagaland, India"
+4435,glc,Arunachal Pradesh,Changlang,27.174,95.8011,10km,10.0,11.79,11.79,False,False,06/25/2012 12:00:00 AM,"Tirap , Arunachal Pradesh","Tirap , Arunachal Pradesh"
+4313,glc,Arunachal Pradesh,Lower Dibang Valley,28.4659,95.86,50km,50.0,39.9,16.1,True,True,04/08/2012 12:00:00 AM,"Endulin Nallah, Mayodia, 17-camp, 83-camp","Endulin Nallah, Mayodia, 17-camp, 83-camp"
+2344,glc,Manipur,Tamenglong,24.7505,93.4221,5km,5.0,23.67,19.31,False,False,08/27/2010 04:30:00 PM,"NH-53 at Nungba police station, Kambirong(?), Manipur","NH-53 at Nungba police station, Kambirong(?), Manipur"
+7263,glc,Manipur,Senapati,25.4477,94.0489,1km,1.0,10.4,10.4,False,False,07/22/2015 12:00:00 AM,"15 kms from Maram, National Highway-102/A (Maram Peren road)","15 kms from Maram, National Highway-102/A (Maram Peren road)"
+5271,glc,Nagaland,Tuensang,26.284,94.5808,5km,5.0,32.55,1.24,False,True,08/04/2013 12:00:00 AM,"Nanga, Nagaland","Nanga, Nagaland"
+4424,glc,Assam,Kamrup,26.149,91.7351,1km,1.0,7.75,6.26,False,False,06/20/2012 12:00:00 AM,"Lalunggaon, Guwahati,  Assam","Lalunggaon, Guwahati,  Assam"
+3525,glc,Manipur,Tamenglong,25.0672,93.4093,25km,25.0,8.06,8.06,True,True,05/22/2011 12:00:00 AM,"Kaiphundai(?)-Tousem(in Assam) road, Tamenglong district, Manipur","Kaiphundai(?)-Tousem(in Assam) road, Tamenglong district, Manipur"
+7369,glc,Manipur,Chandel,24.1988,94.1016,10km,10.0,16.7,16.7,False,False,08/01/2015 12:00:00 AM,between Chalong and Paraolon,between Chalong and Paraolon
+4892,glc,Arunachal Pradesh,Upper Subansiri,27.8776,94.25,50km,50.0,26.32,7.12,True,True,06/01/2013 12:00:00 AM,Upper Subansiri,Upper Subansiri
+4377,glc,Assam,Kamrup,26.1475,91.7356,5km,5.0,7.58,6.39,False,False,06/02/2012 12:00:00 AM,"Guwahati, Assam","Guwahati, Assam"
+5430,glc,Manipur,Tamenglong,24.9037,93.487,25km,25.0,23.26,21.61,True,True,09/01/2013 12:00:00 AM,"Tamenglong- Khongsang Road, Manipur","Tamenglong- Khongsang Road, Manipur"
+7264,glc,Manipur,Senapati,25.4538,93.9827,5km,5.0,11.56,8.24,False,False,07/22/2015 12:00:00 AM,22 kms to 30 kms between Sangkungmai and Willong,22 kms to 30 kms between Sangkungmai and Willong
+5006,glc,Nagaland,Wokha,26.1147,94.3864,1km,1.0,33.09,0.07,False,True,07/01/2013 12:00:00 AM,"Thillong Village, Doyang Along State Highway 1, Wokha To Merapani Road","Thillong Village, Doyang Along State Highway 1, Wokha To Merapani Road"
+256,glc,Sikkim,East,27.3425,88.6236,10km,10.0,16.76,4.98,False,True,09/10/2007 12:00:00 AM,Rhodong village near Rhey in East Sikkim,Rhodong village near Rhey in East Sikkim
+9335,glc,Assam,Hailakandi,24.5202,92.7239,1km,1.0,3.35,3.35,False,False,05/18/2016 08:00:00 AM,"Bilaipur, Hailakandi district, Assam, India","Bilaipur, Hailakandi district, Assam, India"
+7279,glc,Manipur,Tamenglong,24.9818,93.5142,50km,50.0,22.0,20.77,True,True,07/24/2015 12:00:00 AM,Tamenglong Ward No-IV,Tamenglong Ward No-IV
+6288,glc,Assam,Kamrup,26.1985,91.7998,5km,5.0,9.08,0.75,False,True,09/22/2014 12:00:00 AM,Noonmati,Noonmati
+5087,glc,Nagaland,Kohima,25.6269,94.1139,10km,10.0,7.98,7.98,True,True,07/12/2013 12:00:00 AM,"National Highway 29 Near Phesama Village, Nagaland","National Highway 29 Near Phesama Village, Nagaland"
+258,glc,Manipur,Chandel,24.4279,94.0564,50km,50.0,29.06,3.85,True,True,09/11/2007 12:00:00 AM,"NH-39 at Imphal-Moreh section, Lokchao largest event","NH-39 at Imphal-Moreh section, Lokchao largest event"
+5338,glc,Nagaland,Mon,26.8727,94.9275,25km,25.0,7.15,7.15,True,True,08/16/2013 12:00:00 AM,"Longlem, Nagaland","Longlem, Nagaland"
+2411,glc,Assam,Lakhimpur,27.0011,93.7273,unknown,,2.05,2.05,False,False,09/10/2010 12:00:00 AM,"districts Lakhimpur, Dhemaji, Golaghat, and Sonitpur, Assam province","districts Lakhimpur, Dhemaji, Golaghat, and Sonitpur, Assam province"
+6143,glc,Mizoram,Aizawl,23.7327,92.7463,5km,5.0,45.8,8.3,False,False,07/14/2014 06:00:00 PM,"Zembabawk, Aizawl","Zembabawk, Aizawl"
+4908,glc,Sikkim,East,27.3721,88.708,25km,25.0,10.66,3.42,True,True,06/08/2013 05:00:00 PM,"15 Km From Gangtok, Himalayans","15 Km From Gangtok, Himalayans"
+9124,glc,Meghalaya,South Garo Hills,25.203,90.5573,5km,5.0,3.22,3.22,True,True,07/19/2016 12:00:00 AM,"Rongthragittim Songittal village, near Sibbari, South Garo Hills District, Meghalaya, India","Rongthragittim Songittal village, near Sibbari, South Garo Hills District, Meghalaya, India"
+2282,glc,Nagaland,Tuensang,26.1984,94.8158,1km,1.0,30.29,11.28,False,False,08/19/2010 06:30:00 AM,"Tuensang-Kohima rd, 3 km outside Tuensang, Nagaland","Tuensang-Kohima rd, 3 km outside Tuensang, Nagaland"
+9338,glc,Assam,Karimganj,24.4638,92.4943,10km,10.0,19.62,1.33,False,True,05/18/2016 08:00:00 AM,"Sonachirra, Karimganj district, Assam, India","Sonachirra, Karimganj district, Assam, India"
+2421,glc,Mizoram,Aizawl,23.75406693,92.74128531,1km,1.0,44.57,8.88,False,False,09/13/2010 09:00:00 AM,"road to Muanna Godown, Zuangtui, Mizoram","road to Muanna Godown, Zuangtui, Mizoram"
+2249,glc,Nagaland,Tuensang,26.0814,94.803,25km,25.0,28.45,10.01,False,True,08/14/2010 12:00:00 AM,"Kiphire-Tuensang rd, Nagaland","Kiphire-Tuensang rd, Nagaland"
+8901,glc,Nagaland,Kohima,25.7902,94.1318,25km,25.0,20.98,12.27,True,True,07/10/2016 12:00:00 AM,"National Highway 2, near Kohima, Nagaland, India","National Highway 2, near Kohima, Nagaland, India"
+2283,glc,Manipur,Tamenglong,24.8961,93.4957,5km,5.0,24.32,20.42,False,False,08/19/2010 12:00:00 AM,"2 km from Khongsang village(?), road between Tamenglong and Imphal or Nungba, Manipur","2 km from Khongsang village(?), road between Tamenglong and Imphal or Nungba, Manipur"
+6016,glc,Assam,Karimganj,24.8669,92.3576,1km,1.0,1.42,1.42,False,False,05/09/2014 11:00:00 PM,"Satgarakul Village, Karimganj, Assam State","Satgarakul Village, Karimganj, Assam State"
+215,glc,Nagaland,Dimapur,25.7428,93.9136,50km,50.0,11.87,3.41,True,True,08/28/2007 12:00:00 AM,Phesema area at National Highway 39,Phesema area at National Highway 39
+7780,glc,Mizoram,Aizawl,23.3572,92.7878,5km,5.0,40.62,3.17,False,True,08/26/2015 12:00:00 AM,Sailam village,Sailam village
+2281,glc,Nagaland,Kohima,25.61560252,94.11603493,5km,5.0,6.91,6.91,False,False,08/19/2010 06:00:00 PM,"Kisima, Nagaland","Kisima, Nagaland"
+1996,glc,Nagaland,Tuensang,26.4333,94.8833,25km,25.0,18.33,2.42,True,True,06/17/2010 07:30:00 PM,"Shayoung Ward(?), Longleng, Nagaland","Shayoung Ward(?), Longleng, Nagaland"
+260,glc,Sikkim,East,27.2084,88.4909,5km,5.0,4.47,0.41,True,True,09/11/2007 12:00:00 AM,"National Highway 31A, between Singtam and Rangpo","National Highway 31A, between Singtam and Rangpo"
+6283,glc,Assam,Kamrup,26.1314,91.7548,1km,1.0,5.05,5.05,False,False,09/22/2014 12:00:00 AM,Dakhingaon,Dakhingaon
+8930,glc,Nagaland,Zunheboto,26.1699,94.4922,1km,1.0,37.0,5.5,False,False,07/11/2016 11:00:00 PM,"North Point Colony, Akuluto, Nagaland, India","North Point Colony, Akuluto, Nagaland, India"
+869,glc,Assam,Lakhimpur,27.2333,94.1167,50km,50.0,15.27,15.27,True,True,10/29/2008 12:00:00 AM,North Lakhimpur ,North Lakhimpur 
+285,glc,Mizoram,Kolasib,24.1293,92.6921,50km,50.0,15.91,11.64,True,True,09/29/2007 12:00:00 AM,"National Highway, 45 Aizwal (Mizoram)","National Highway, 45 Aizwal (Mizoram)"
+3662,glc,Manipur,Senapati,25.03561729,94.0144205,25km,25.0,44.71,0.33,False,True,06/28/2011 12:00:00 AM,"Ikou-Gangpijang road, near: Ikou, Saikul, and Gangpijang; Imphal India","Ikou-Gangpijang road, near: Ikou, Saikul, and Gangpijang; Imphal India"
+5427,glc,Manipur,Senapati,25.3833,94.1884,5km,5.0,13.09,13.09,False,False,08/15/2013 12:00:00 AM,"Koide Government High School, Senapati, Manipur","Koide Government High School, Senapati, Manipur"
+8339,glc,Assam,Kamrup,26.1666,91.7042,1km,1.0,11.19,6.51,False,False,09/23/2015 12:00:00 AM,Kamakhya Temple,Kamakhya Temple
+4905,glc,Nagaland,Tuensang,26.0977,94.7031,25km,25.0,37.9,0.97,False,True,06/07/2013 12:00:00 AM,"Kuthur – Huker Road Via Y Anner, Chessore, Nagaland","Kuthur – Huker Road Via Y Anner, Chessore, Nagaland"
+9186,glc,Manipur,Senapati,25.48,94.1383,1km,1.0,4.86,4.86,False,False,07/25/2016 12:30:00 PM,"Imphal-Dimapur road  in Tadubi, Senapati district, Manipur, India","Imphal-Dimapur road  in Tadubi, Senapati district, Manipur, India"
+5107,glc,Nagaland,Kohima,25.6269,94.1139,10km,10.0,7.98,7.98,True,True,07/15/2013 12:00:00 AM,"National Highway 29 Near Phesama Village, Nagaland","National Highway 29 Near Phesama Village, Nagaland"
+7253,glc,Assam,Cachar,24.7979,92.9974,5km,5.0,10.71,10.71,False,False,07/22/2015 12:00:00 AM,Lakhipur,Lakhipur
+6286,glc,Assam,Kamrup,26.1044,91.7082,5km,5.0,5.53,5.53,False,False,09/22/2014 12:00:00 AM,Garchuk,Garchuk
+594,glc,Manipur,Senapati,24.9336,93.8275,25km,25.0,37.16,1.22,False,True,06/19/2008 12:00:00 AM,"Namkaoluang village, Tamenglong-Sangrung (Khongsang) road, NH-53, Manipur","Namkaoluang village, Tamenglong-Sangrung (Khongsang) road, NH-53, Manipur"
+5337,glc,Nagaland,Mon,26.4205,94.9731,5km,5.0,9.87,4.03,False,True,08/16/2013 12:00:00 AM,"Yakshu, Nagaland","Yakshu, Nagaland"
+3881,glc,Arunachal Pradesh,Papum Pare,27.1034,93.6885,5km,5.0,9.48,9.48,False,False,08/05/2011 12:00:00 AM,Itanagar,Itanagar
+3925,glc,Arunachal Pradesh,East Kameng,27.4888,93.0153,50km,50.0,55.32,8.84,False,True,08/15/2011 12:00:00 AM,"East Kameng, Arunachal Pradesh","East Kameng, Arunachal Pradesh"
+7383,glc,Manipur,Chandel,23.899,94.1434,5km,5.0,2.56,2.56,True,True,08/01/2015 12:00:00 AM,"Tuitung village, Khengjoi","Tuitung village, Khengjoi"
+8900,glc,Manipur,Ukhrul,25.0118,94.3136,25km,25.0,35.37,15.49,False,True,07/07/2016 12:00:00 AM,"Imphal-Ukhrul sector of National Highway 102, Manipur, India","Imphal-Ukhrul sector of National Highway 102, Manipur, India"
+4757,glc,Arunachal Pradesh,East Siang,28.1193,95.1645,5km,5.0,30.81,4.56,False,True,02/18/2013 12:00:00 AM,"East Siang, Arunachal Pradesh","East Siang, Arunachal Pradesh"
+7666,glc,Manipur,Tamenglong,25.1019,93.3729,5km,5.0,3.28,3.28,True,True,08/11/2015 12:00:00 AM,Tousem,Tousem
+3813,glc,Sikkim,South Sikkim,27.1141,88.4658,25km,25.0,0.09,0.09,True,True,07/20/2011 12:00:00 AM,National Highway 31A in West Bengal's Darjeeling district,National Highway 31A in West Bengal's Darjeeling district
+2113,glc,Sikkim,East,27.3773,88.559,25km,25.0,20.58,1.75,True,True,07/21/2010 08:00:00 AM,"Singtam-Mangan rd, Sikkim","Singtam-Mangan rd, Sikkim"
+2045,glc,Nagaland,Tuensang,26.2363,94.8133,5km,5.0,30.71,12.6,False,False,07/06/2010 12:00:00 AM,"Tuensang, Nagaland","Tuensang, Nagaland"
+7701,glc,Nagaland,Kohima,25.6278,94.1051,5km,5.0,7.64,7.64,False,False,08/19/2015 03:00:00 PM,Phesama,Phesama
+2422,glc,Mizoram,Aizawl,23.74182634,92.7141905,1km,1.0,42.38,5.85,False,False,09/13/2010 12:00:00 AM,"Hunthar Veng, Mizoram","Hunthar Veng, Mizoram"
+6513,glc,Tripura,South Tripura,23.0137,91.7174,5km,5.0,1.87,1.87,True,True,08/14/2014 11:00:00 PM,Sabroom,Sabroom
+4990,glc,Sikkim,East,27.3765,88.7628,1km,1.0,5.59,4.14,False,False,06/27/2013 11:00:00 PM,"Near Changu Lake, 15Km Away From Nathu La, On India-China Border In Eastern Sikkim","Near Changu Lake, 15Km Away From Nathu La, On India-China Border In Eastern Sikkim"
+2248,glc,Nagaland,Tuensang,26.222,94.9152,25km,25.0,20.64,10.01,True,True,08/14/2010 12:00:00 AM,"Noklak-Tuensang road, Nagaland","Noklak-Tuensang road, Nagaland"
+5268,glc,Nagaland,Zunheboto,26.0137,94.5163,25km,25.0,35.6,12.35,False,True,08/04/2013 12:00:00 AM,"Zunheboto, Nagaland","Zunheboto, Nagaland"
+6106,glc,Assam,Kamrup,26.1407,91.7645,5km,5.0,5.45,5.45,False,False,06/26/2014 11:00:00 PM,Narakasur,Narakasur
+3965,glc,Manipur,East Imphal,24.808,93.117,1km,1.0,0.41,0.41,True,True,09/06/2011 08:00:00 AM,NH 37 at Awang Khul ,NH 37 at Awang Khul 
+1111,glc,Sikkim,South Sikkim,27.1344,88.4575,5km,5.0,2.2,2.2,True,True,08/20/2009 12:00:00 AM,"Melli Chalisey, Sikkim","Melli Chalisey, Sikkim"
+6969,glc,Meghalaya,West Garo Hills,25.5114,90.215,1km,1.0,22.26,11.55,False,False,06/16/2015 06:15:00 AM,"Nakham Bazaar, Tura, Meghalaya","Nakham Bazaar, Tura, Meghalaya"
+2044,glc,Nagaland,Tuensang,25.8877,94.7861,5km,5.0,22.97,11.41,False,False,07/06/2010 12:00:00 AM,"Kiphire,  Nagaland","Kiphire,  Nagaland"
+2587,glc,Nagaland,Kohima,25.6623,94.1072,1km,1.0,10.9,10.9,False,False,10/10/2010 06:00:00 AM,"Lower Chandmari area, PWD department, Kohima, Manipur","Lower Chandmari area, PWD department, Kohima, Manipur"
+8684,glc,Assam,Kamrup,25.9611,91.3681,50km,50.0,12.67,12.67,True,True,07/07/2016 12:00:00 AM,"Kamrup district, Assam, India","Kamrup district, Assam, India"
+1596,glc,Manipur,West Imphal,24.7339,93.9161,5km,5.0,56.31,2.36,False,True,03/27/2010 08:00:00 PM,"LangthAbal Khoupum, Imphal, Manipur","LangthAbal Khoupum, Imphal, Manipur"
+1771,glc,Assam,Kamrup,26.1978,91.7665,exact,0.0,10.25,0.26,False,False,04/20/2010 12:00:00 AM,"Raj Bhavan Guwahati, Assam","Raj Bhavan Guwahati, Assam"
+7364,glc,Manipur,Ukhrul,24.819,94.3551,10km,10.0,22.82,17.88,False,False,07/31/2015 09:00:00 AM,Phungyar road,Phungyar road
+6968,glc,Meghalaya,Jaintia Hills,25.463,92.2121,5km,5.0,23.01,10.13,False,False,06/13/2015 12:00:00 AM,"Ratacherra village along the NH-44 connecting to Barak Valley in Assam and Tripura, Meghalaya, Mizoramon","Ratacherra village along the NH-44 connecting to Barak Valley in Assam and Tripura, Meghalaya, Mizoramon"
+7373,glc,Manipur,Ukhrul,24.9111,94.4759,10km,10.0,18.03,18.03,False,False,08/01/2015 12:00:00 AM,between Maku village and Kamjong sub division,between Maku village and Kamjong sub division
+4570,glc,Arunachal Pradesh,East Siang,27.8458,95.2253,1km,1.0,0.12,0.12,True,True,09/19/2012 12:00:00 AM, Arunachal Pradesh , Arunachal Pradesh 
+1935,glc,Tripura,West Tripura,23.8986,91.7599,5km,5.0,26.04,2.0,False,True,06/03/2010 12:00:00 AM,"atharamura hills, Highway 44, Tripura","atharamura hills, Highway 44, Tripura"
+2577,glc,Manipur,Senapati,25.5265,93.8673,50km,50.0,3.49,3.49,True,True,10/09/2010 12:00:00 AM,"NH-39 near Khongnem(?) village, between Imphal and Dimapur, Manipur","NH-39 near Khongnem(?) village, between Imphal and Dimapur, Manipur"
+7276,glc,Assam,Kamrup,26.1062,91.8717,5km,5.0,0.81,0.81,True,True,07/25/2015 09:00:00 AM,"Dispur : According to report, a huge hillock slipped into the house after heavy rain where Dinesh Bodo along with his wife and daughter lived in. Thi*",
+2576,glc,Manipur,Senapati,25.4788,94.1399,10km,10.0,4.99,4.99,True,True,10/09/2010 12:00:00 AM,"NH-39 at Tobio village(?), 7 km form Tadubi, Manipur","NH-39 at Tobio village(?), 7 km form Tadubi, Manipur"
+1102,glc,Sikkim,West Sikkim,27.2644,88.1365,10km,10.0,9.33,9.33,True,True,08/19/2009 08:30:00 PM,"Sombaria, West Sikkim","Sombaria, West Sikkim"
+6293,glc,Meghalaya,West Garo Hills,25.5006,90.0896,50km,50.0,12.79,12.79,True,True,10/20/2014 12:00:00 AM,South West Garo Hills,South West Garo Hills
+4858,glc,Assam,Kamrup,26.1662,91.7138,50km,50.0,10.54,5.87,True,True,05/11/2013 09:00:00 AM,"Nursery, North Guwahati, Guwahati, Assam,","Nursery, North Guwahati, Guwahati, Assam,"
+5269,glc,Nagaland,Zunheboto,25.8376,94.5234,unknown,,16.33,1.11,False,False,08/04/2013 12:00:00 AM,"Tizu, Nagaland","Tizu, Nagaland"
+5270,glc,Nagaland,Zunheboto,26.0481,94.4619,unknown,,40.52,8.1,False,False,08/04/2013 12:00:00 AM,"Phizo, Nagaland","Phizo, Nagaland"
+6284,glc,Assam,Kamrup,26.1324,91.8342,5km,5.0,1.76,1.76,True,True,09/22/2014 12:00:00 AM,Batahghuli,Batahghuli
+4394,glc,Sikkim,East,27.1748,88.6458,25km,25.0,0.91,0.91,True,True,06/07/2012 04:30:00 AM,"Rolep, South Sikkim( Mapping to Rhenock 12 miles from Rolep)","Rolep, South Sikkim( Mapping to Rhenock 12 miles from Rolep)"
+9251,glc,Nagaland,Tuensang,25.8702,94.7844,1km,1.0,23.11,9.45,False,False,07/28/2016 11:00:00 PM,"Government Middle School (GMS) Kiphire station “B”, Kiphire, Nagaland, India","Government Middle School (GMS) Kiphire station “B”, Kiphire, Nagaland, India"
+7699,glc,Nagaland,Zunheboto,26.0214,94.5224,50km,50.0,36.35,12.43,True,True,08/19/2015 12:00:00 AM,Zunheboto district,Zunheboto district
+7664,glc,Manipur,Tamenglong,24.7459,93.4251,10km,10.0,24.11,18.85,False,False,08/11/2015 12:00:00 AM,Nungba,Nungba
+7589,glc,Meghalaya,Jaintia Hills,25.2568,92.3825,25km,25.0,19.31,19.31,True,True,08/19/2015 12:00:00 AM,National Highway 44,National Highway 44
+7887,glc,Arunachal Pradesh,Lohit,27.8835,96.9262,50km,50.0,18.01,18.01,True,True,08/16/2015 12:00:00 AM,Hawai,Hawai
+9404,glc,Arunachal Pradesh,Lohit,28.0822,96.5316,1km,1.0,31.64,31.38,False,False,05/01/2016 12:00:00 AM,"Hayuliang, Anjaw district,Arunachal Pradesh, India","Hayuliang, Anjaw district,Arunachal Pradesh, India"
+6287,glc,Assam,Kamrup,26.1295,91.7056,5km,5.0,8.16,8.16,False,False,09/22/2014 12:00:00 AM,Dhirenpara,Dhirenpara
+2296,glc,Sikkim,South Sikkim,27.167,88.3652,10km,10.0,6.71,4.6,True,True,08/20/2010 12:00:00 AM,"many locations around Namchi, Sikkim","many locations around Namchi, Sikkim"
+2304,glc,Nagaland,Kohima,25.5718,94.1211,10km,10.0,3.71,3.71,True,True,08/21/2010 06:00:00 PM,"NH 39 at Kigwema(?), between Mao Gate and Kohima, Nagaland","NH 39 at Kigwema(?), between Mao Gate and Kohima, Nagaland"
+5273,glc,Nagaland,Zunheboto,26.1807,94.5497,5km,5.0,39.07,3.03,False,True,08/04/2013 12:00:00 AM,"Zhekuto, Nagaland","Zhekuto, Nagaland"
+1125,glc,Sikkim,East,27.3746,88.7648,25km,25.0,5.56,4.35,True,True,08/26/2009 12:00:00 AM,"17th Mile towards Tsomgo Lake, near Kyongsala, Sikkim ","17th Mile towards Tsomgo Lake, near Kyongsala, Sikkim "
+8995,glc,Assam,Kamrup,26.1963,91.8074,5km,5.0,8.71,1.19,False,True,07/14/2016 12:00:00 AM,"Noonmati Nijarapar area of the city, Guwahati, Assam, India","Noonmati Nijarapar area of the city, Guwahati, Assam, India"
+2112,glc,Sikkim,North Sikkim,27.5509,88.6475,unknown,,11.89,11.89,False,False,07/21/2010 08:00:00 AM,"Zang(?), east Sikkim","Zang(?), east Sikkim"
+7313,glc,Manipur,Chandel,24.1077,94.0396,25km,25.0,19.44,19.44,True,True,08/01/2015 06:30:00 AM,Joumol of Chandel district,Joumol of Chandel district
+2567,glc,Nagaland,Phek,25.6633,94.4703,5km,5.0,4.65,4.65,True,True,10/08/2010 12:00:00 AM,"Phek, Manipur","Phek, Manipur"
+241,glc,Sikkim,East,27.201,88.4883,25km,25.0,4.09,0.1,True,True,09/07/2007 12:00:00 AM,"National Highway 31A between Rangpo and Tarkhola, in East Sikkim","National Highway 31A between Rangpo and Tarkhola, in East Sikkim"
+4392,glc,Arunachal Pradesh,Upper Dibang Valley,29.2409,95.9761,10km,10.0,15.87,15.87,False,False,06/06/2012 12:00:00 AM,"Dibang, Arunachal Pradesh","Dibang, Arunachal Pradesh"
+6285,glc,Assam,Kamrup,26.159,91.8178,5km,5.0,4.48,4.48,True,True,09/22/2014 12:00:00 AM,VIP Road,VIP Road
+868,glc,Assam,Barpeta,26.3333,91.25,50km,50.0,46.57,1.66,True,True,10/29/2008 12:00:00 AM,"Kamrup, and Sonitpur, Assam","Kamrup, and Sonitpur, Assam"
+5005,glc,Nagaland,Mon,26.72,95.029,5km,5.0,16.75,16.75,False,False,07/01/2013 12:00:00 AM,"Walo Ward, Mon Town, Wokha District, Nagaland","Walo Ward, Mon Town, Wokha District, Nagaland"
+3860,glc,Manipur,Senapati,25.4192,94.108,10km,10.0,12.02,12.02,False,False,07/29/2011 12:00:00 AM,"Maram, Manipur","Maram, Manipur"
+5476,glc,Sikkim,East,27.3736,88.7323,25km,25.0,8.38,4.78,True,True,09/07/2013 03:00:00 PM,14 Milestone Of J N Marg Near Kyangnosola (East Sikkim),14 Milestone Of J N Marg Near Kyangnosola (East Sikkim)
+1127,glc,Assam,North Cachar Hills,25.1718,93.123,10km,10.0,19.95,10.7,False,False,08/27/2009 12:00:00 AM,between Mahur and Phaiding railway stations on Barail hills (Mahur and Barail hills located),between Mahur and Phaiding railway stations on Barail hills (Mahur and Barail hills located)
+5603,glc,Manipur,Ukhrul,25.426,94.6024,5km,5.0,4.96,4.96,True,True,10/13/2013 07:30:00 PM,"Tusom, Manipur","Tusom, Manipur"
+2042,glc,Nagaland,Zunheboto,26.0093,94.5238,5km,5.0,35.0,11.46,False,False,07/06/2010 12:00:00 AM,"Zunheboto, Nagaland","Zunheboto, Nagaland"
+5442,glc,Arunachal Pradesh,Papum Pare,27.1614,93.7525,unknown,,5.27,5.27,False,False,09/02/2013 12:00:00 AM,Arunachal Pradesh,Arunachal Pradesh
+7933,glc,Assam,Kamrup,26.1868,91.6739,1km,1.0,14.89,7.83,False,False,09/01/2015 12:00:00 AM,Maligaon,Maligaon
+3637,glc,Nagaland,Phek,25.51614662,94.2341227,1km,1.0,1.97,1.97,False,False,06/21/2011 12:00:00 AM,"Lasumi village in Phek district, Kohima","Lasumi village in Phek district, Kohima"
+4393,glc,Sikkim,North Sikkim,27.7565,88.632,25km,25.0,20.97,20.97,True,True,06/07/2012 12:00:00 AM,"Nathang Maong, Sikkim","Nathang Maong, Sikkim"
+3837,glc,Assam,Nagaon,26.5836,93.0038,50km,50.0,37.09,1.92,True,True,07/24/2011 12:30:00 PM,NH 37,NH 37
+220,glc,Manipur,Senapati,25.1333,93.9667,25km,25.0,35.29,6.0,False,True,08/31/2007 12:00:00 AM,"Velnal village, Tamei sub-division and Toribari village (3 kilometer toward Tamei from Kangpokpi)","Velnal village, Tamei sub-division and Toribari village (3 kilometer toward Tamei from Kangpokpi)"
+212,glc,Meghalaya,East Khasi Hills,25.5576,91.8506,unknown,,33.6,7.65,False,False,08/26/2007 12:00:00 AM,National Highway No 44 at Sonarpur in Meghalaya,National Highway No 44 at Sonarpur in Meghalaya
+7372,glc,Manipur,Ukhrul,25.0634,94.3415,10km,10.0,29.78,18.23,False,False,07/31/2015 11:00:00 PM,Naga Gate along the Ukhrul-Imphal route,Naga Gate along the Ukhrul-Imphal route
+2570,glc,Manipur,West Imphal,24.837,93.9128,5km,5.0,50.93,2.0,False,True,10/08/2010 12:00:00 AM,"Tharon(?) and Langol Tarung villages, Thangmeiband constituency, Imphal, Manipur","Tharon(?) and Langol Tarung villages, Thangmeiband constituency, Imphal, Manipur"
+126,glc,Sikkim,South Sikkim,27.1499,88.38,25km,25.0,5.66,5.66,True,True,07/16/2007 12:00:00 AM,Bardang near Singtam,Bardang near Singtam
+1168,glc,Sikkim,East,27.1954,88.6115,5km,5.0,0.71,0.71,True,True,09/17/2009 12:00:00 AM,"4th Mile on road between Rongli, Rhenock and Rangpo in East Sikkim.","4th Mile on road between Rongli, Rhenock and Rangpo in East Sikkim."
+3806,glc,Arunachal Pradesh,Papum Pare,27.1032,93.6884,10km,10.0,9.48,9.48,True,True,07/19/2011 12:00:00 AM,"Itanagar (one near Pachali power house, one near Heema Hospital, and one nearRomik Colony at P Sector)","Itanagar (one near Pachali power house, one near Heema Hospital, and one nearRomik Colony at P Sector)"
+2026,glc,Meghalaya,West Khasi Hills,25.4916,91.2698,50km,50.0,26.19,26.19,True,True,06/28/2010 12:00:00 AM,"Borsorsa(?), West Khasi Hills, Meghalaya","Borsorsa(?), West Khasi Hills, Meghalaya"
+3943,glc,Sikkim,West Sikkim,27.13862165,88.22551799,10km,10.0,1.17,1.17,True,True,08/23/2011 12:00:00 AM,"Samathang, Sikkim","Samathang, Sikkim"
+714,glc,Assam,Lakhimpur,27.163,94.0,50km,50.0,13.01,13.01,True,True,08/14/2008 12:00:00 AM,"Kimin-Ziro road in Papum Pare district, road between Doimukh and Sagalee, Doimukh-Hoj road; Arunachal Pradesh","Kimin-Ziro road in Papum Pare district, road between Doimukh and Sagalee, Doimukh-Hoj road; Arunachal Pradesh"
+6110,glc,Assam,Kamrup,26.1619,91.7697,exact,0.0,6.9,4.17,False,False,06/27/2014 12:00:00 AM,"Bhangagarh, Assam","Bhangagarh, Assam"
+247,glc,Manipur,Senapati,25.0604,93.9877,50km,50.0,41.06,0.16,True,True,09/08/2007 12:00:00 AM,"Lower Shajouba village near Tadubi along NH 39, Manipur ","Lower Shajouba village near Tadubi along NH 39, Manipur "
+4407,glc,Meghalaya,Jaintia Hills,25.0951,92.3567,50km,50.0,2.08,2.08,True,True,06/13/2012 12:00:00 AM,"NH44, Malidhor area,  Baleswar","NH44, Malidhor area,  Baleswar"
+3789,glc,Arunachal Pradesh,East Kameng,27.2743,92.9064,10km,10.0,29.52,1.25,False,True,07/16/2011 12:00:00 AM,Mebua (8 km from Seppa),Mebua (8 km from Seppa)
+6292,glc,Meghalaya,West Garo Hills,25.7238,89.9032,5km,5.0,0.48,0.48,True,True,09/23/2014 12:00:00 AM,Hatsingimari,Hatsingimari
+545,glc,Assam,Cachar,24.9849,92.8411,50km,50.0,25.04,7.9,True,True,05/20/2008 12:00:00 AM,"A Cachar District village, near village of Srinager, Assam","A Cachar District village, near village of Srinager, Assam"
+7265,glc,Manipur,Senapati,25.5007,93.9854,5km,5.0,6.54,6.54,False,False,07/22/2015 12:00:00 AM,Willong-Yangkhullen stretch,Willong-Yangkhullen stretch
+2436,glc,Manipur,Churachandpur,24.3069,93.125,5km,5.0,9.08,9.08,False,False,09/16/2010 03:00:00 AM,"Taithu village, Churanchandpur district, Mizoram, Manipur","Taithu village, Churanchandpur district, Mizoram, Manipur"
+7727,glc,Nagaland,Kohima,25.6263,94.1057,5km,5.0,7.56,7.56,False,False,08/20/2015 06:00:00 PM,between Phesama and Kuima in Nagaland,between Phesama and Kuima in Nagaland
+7334,glc,Arunachal Pradesh,West Siang,28.1737,94.7596,unknown,,49.28,13.76,False,False,08/18/2015 12:00:00 AM,Arunachal Pradesh,Arunachal Pradesh
+7778,glc,Mizoram,Aizawl,23.8447,93.0514,10km,10.0,22.84,6.03,False,True,08/26/2015 12:00:00 AM,Phullen’s main road,Phullen’s main road
+6290,glc,Meghalaya,East Khasi Hills,25.5772,91.8666,5km,5.0,31.32,7.4,False,False,09/23/2014 03:00:00 AM,Mawbah under Mawprem area,Mawbah under Mawprem area
+4408,glc,Meghalaya,East Khasi Hills,25.5498,92.0757,unknown,,16.0,3.25,False,False,06/13/2012 12:00:00 AM,"NH44, Kuliang","NH44, Kuliang"
+4403,glc,Manipur,Tamenglong,24.8142,93.5444,50km,50.0,31.6,12.45,True,True,06/10/2012 12:00:00 AM,"Imphal-Jiribam section of NH-37 , Manipur","Imphal-Jiribam section of NH-37 , Manipur"
+5429,glc,Sikkim,West Sikkim,27.3425,88.2426,50km,50.0,17.14,5.14,True,True,09/01/2013 06:00:00 PM,Tamabong Village In Sikkim State,Tamabong Village In Sikkim State
+2140,glc,Assam,Cachar,25.0477,92.801,25km,25.0,17.42,3.49,True,True,07/25/2010 12:00:00 AM,"road between Halfong and Redzol(?) or Silchar, Assam","road between Halfong and Redzol(?) or Silchar, Assam"
+2243,glc,Nagaland,Kohima,25.70223725,94.04619681,5km,5.0,12.21,9.57,False,False,08/13/2010 12:00:00 AM,"NH-39 near Kohima Municipality Council(KMC) dumping ground, between Zubza(Sechu) and Kohima, Nagaland","NH-39 near Kohima Municipality Council(KMC) dumping ground, between Zubza(Sechu) and Kohima, Nagaland"
+9142,glc,Nagaland,Mokokchung,26.3185,94.5247,1km,1.0,26.08,4.45,False,False,06/14/2016 08:00:00 AM,"lower Majakong Ward, Mokokchung, Nagaland, India","lower Majakong Ward, Mokokchung, Nagaland, India"
+6107,glc,Assam,Kamrup,26.1844,91.7896,5km,5.0,7.88,1.94,False,True,06/26/2014 11:00:00 PM,Bamunimaidam,Bamunimaidam
+255,glc,Manipur,Chandel,24.2451,94.0691,25km,25.0,21.43,14.02,True,True,09/10/2007 12:00:00 AM,Wamkhu village along the Tengnoupal-Joupi road in Chandel district,Wamkhu village along the Tengnoupal-Joupi road in Chandel district
+7660,glc,Nagaland,Kohima,25.6237,94.1136,5km,5.0,7.63,7.63,False,False,08/12/2015 12:00:00 AM,Phesama village,Phesama village
+4556,glc,Sikkim,South Sikkim,27.1675,88.3651,5km,5.0,6.76,4.56,False,True,09/16/2012 12:00:00 AM,"Namchi to Phongla, Namchi to Melli ,Namchi to Sumbuk","Namchi to Phongla, Namchi to Melli ,Namchi to Sumbuk"
+7389,glc,Manipur,Chandel,24.4072,94.0644,5km,5.0,27.59,6.18,False,False,08/01/2015 12:00:00 AM,between Bongyang and Lokchao along the Imphal-Moreh highway,between Bongyang and Lokchao along the Imphal-Moreh highway
+2437,glc,Mizoram,Aizawl,23.7527,92.694,5km,5.0,40.04,5.3,False,False,09/16/2010 12:00:00 AM,"Aizawl-Lengpui rd 3km from Aizawl, Mizoram, Manipur","Aizawl-Lengpui rd 3km from Aizawl, Mizoram, Manipur"
+731,glc,Nagaland,Wokha,26.138,94.25,50km,50.0,22.48,9.97,True,True,08/19/2008 12:00:00 AM,"Akuk village, Wokha District, Nagaland","Akuk village, Wokha District, Nagaland"
+7371,glc,Manipur,Chandel,23.9939,94.0573,50km,50.0,7.79,7.79,True,True,08/01/2015 12:00:00 AM,near S Lamphei Lamkhai and Sehlon village,near S Lamphei Lamkhai and Sehlon village
+7923,glc,Assam,Kamrup,26.49349035,91.72137514,10km,10.0,34.81,5.13,False,True,09/01/2015 12:00:00 AM,Amingaon,Amingaon
+760,glc,Nagaland,Kohima,25.67,94.1066,25km,25.0,11.61,11.06,True,True,08/29/2008 12:00:00 AM,"Kohima, Nagaland","Kohima, Nagaland"
+2182,glc,Manipur,Senapati,24.9356,93.8443,25km,25.0,38.02,0.13,False,True,07/31/2010 09:00:00 AM,Dimapur-Imphal highway (NH 39) near Manipur,Dimapur-Imphal highway (NH 39) near Manipur
+1954,glc,Manipur,Tamenglong,24.7543,93.5039,50km,50.0,30.93,17.06,True,True,06/07/2010 12:00:00 AM,"Irang(?) and Barak(?) and Makru(?) on highway 53 between Imphal and Jiribam, Manipur","Irang(?) and Barak(?) and Makru(?) on highway 53 between Imphal and Jiribam, Manipur"
+6963,glc,Mizoram,Aizawl,23.7131,92.7362,50km,50.0,44.92,6.88,True,True,06/19/2015 12:00:00 AM,"Muanna locality, Mizoram","Muanna locality, Mizoram"
+5336,glc,Nagaland,Mon,26.3897,94.9439,10km,10.0,13.94,1.42,False,True,08/16/2013 12:00:00 AM,"Tobu, Nagaland","Tobu, Nagaland"
+7590,glc,Meghalaya,Jaintia Hills,25.1416,92.3807,5km,5.0,7.78,7.78,False,False,08/19/2015 12:00:00 AM,Tongseng,Tongseng
+1222,glc,Mizoram,Aizawl,23.73478778,92.72124394,5km,5.0,43.33,6.03,False,False,10/05/2009 12:00:00 AM,"Chhinga Veng, Aizawl","Chhinga Veng, Aizawl"
+8222,glc,Assam,Kamrup,26.1961,91.7825,5km,5.0,9.35,0.48,False,True,06/22/2016 12:00:00 PM,"Piyali Phukan Nagar, Guwahati, India","Piyali Phukan Nagar, Guwahati, India"
+7706,glc,Meghalaya,Jaintia Hills,25.0728,92.3636,5km,5.0,0.74,0.74,True,True,08/19/2015 12:00:00 AM,National Highway at Kuliang,National Highway at Kuliang
+8224,glc,Mizoram,Aizawl,23.7313,92.7187,5km,5.0,43.22,5.63,False,False,09/14/2015 01:30:00 AM,"Aizawl, Mizoram, India","Aizawl, Mizoram, India"
+4241,glc,Manipur,Tamenglong,25.1604,93.6795,25km,25.0,8.44,8.44,True,True,03/04/2012 12:00:00 AM,Tamei constituency in Tamenlong district,Tamei constituency in Tamenlong district
+755,glc,Sikkim,East,27.337,88.609,25km,25.0,15.94,5.65,True,True,08/28/2008 12:00:00 AM,"Ranka, Sikkim and Louing road","Ranka, Sikkim and Louing road"
+1756,glc,Sikkim,East,27.322,88.6087,1km,1.0,14.28,7.31,False,False,04/17/2010 12:00:00 AM,"Nam Nang, Gangtok","Nam Nang, Gangtok"
+1930,glc,Arunachal Pradesh,Lower Dibang Valley,28.4298,95.8776,50km,50.0,37.81,20.12,True,True,05/31/2010 12:00:00 AM,"Anini-Roing road,  Dibang Valley,  Arunachal Pradesh ","Anini-Roing road,  Dibang Valley,  Arunachal Pradesh "
+9334,glc,Assam,Hailakandi,24.5204,92.7264,1km,1.0,3.13,3.13,False,False,05/18/2016 08:00:00 AM,"Bilaipur, Hailakandi district, Assam, India","Bilaipur, Hailakandi district, Assam, India"
+8237,glc,Arunachal Pradesh,West Kameng,27.0136,92.6351,1km,1.0,0.62,0.62,True,True,07/01/2016 12:00:00 AM,"Old Inspection Bungalow, Bhalukpong town, West Kameng, Arunachal Pradesh, India","Old Inspection Bungalow, Bhalukpong town, West Kameng, Arunachal Pradesh, India"
+4385,glc,Sikkim,North Sikkim,27.7167,88.5577,5km,5.0,26.13,26.13,False,False,06/03/2012 12:00:00 AM,"lachen, Sikkim","lachen, Sikkim"
+585,glc,Arunachal Pradesh,Papum Pare,27.0998,93.6287,25km,25.0,12.64,12.64,True,True,06/14/2008 12:00:00 AM,"Itanagar-Naharlagun, Arunachal Pradesh","Itanagar-Naharlagun, Arunachal Pradesh"
+4859,glc,Assam,Kamrup,26.1771,91.7599,5km,5.0,8.79,2.63,False,True,05/11/2013 12:00:00 AM,"Sarania Hills, North Guwahati, Guwahati, Assam,","Sarania Hills, North Guwahati, Guwahati, Assam,"
+4436,glc,Arunachal Pradesh,Tirap,26.9986,95.4993,50km,50.0,15.78,15.58,True,True,06/25/2012 12:00:00 AM,"Khonsa, Arunachal Pradesh","Khonsa, Arunachal Pradesh"
+3916,glc,Nagaland,Dimapur,25.7713,93.8067,10km,10.0,4.91,4.91,True,True,08/13/2011 08:00:00 AM,"Chumukedima, Dimapur","Chumukedima, Dimapur"
+3738,glc,Manipur,East Imphal,24.8063,93.9482,50km,50.0,55.82,0.54,False,True,07/06/2011 12:00:00 AM,"National Highway 53, Sinam Khul (near Kotlen; ~25 km from Imphal)","National Highway 53, Sinam Khul (near Kotlen; ~25 km from Imphal)"
+2426,glc,Mizoram,Lunglei,22.7176,92.8416,25km,25.0,25.67,8.37,False,True,09/13/2010 12:00:00 AM,"Hual(Hu) village(?), Lunglei-Lawngtlai rd, Mizoram","Hual(Hu) village(?), Lunglei-Lawngtlai rd, Mizoram"
+1084,glc,Arunachal Pradesh,West Kameng,27.7,92.8,5km,5.0,25.71,5.89,False,False,08/12/2009 12:00:00 AM,"Upper Subansiri District, Arunanchal Pradesh","Upper Subansiri District, Arunanchal Pradesh"
+7266,glc,Manipur,Senapati,25.5098,93.8794,10km,10.0,5.58,5.58,True,True,07/22/2015 12:00:00 AM,Yangkhullen-Tamphung road till Nagaland border,Yangkhullen-Tamphung road till Nagaland border
+1129,glc,Manipur,Ukhrul,24.8628,94.4182,50km,50.0,21.07,21.07,True,True,08/30/2009 12:00:00 AM,"Road stretch from Gammom to Chamu village, under Kamjong block, Ukhrul district, Manipur","Road stretch from Gammom to Chamu village, under Kamjong block, Ukhrul district, Manipur"
+2166,glc,Manipur,Tamenglong,24.9786,93.5027,10km,10.0,21.28,21.28,False,False,07/29/2010 12:00:00 AM,"Highway 53 at Tupul, Tamenglong district","Highway 53 at Tupul, Tamenglong district"
+213,glc,Assam,North Cachar Hills,25.2946,92.8339,unknown,,4.28,4.28,False,False,08/26/2007 12:00:00 AM,Shillong Road at Kuliang in the Jaintia Hills,Shillong Road at Kuliang in the Jaintia Hills
+4426,glc,Assam,Kamrup,26.1226,91.7162,5km,5.0,6.99,6.99,False,False,06/22/2012 12:00:00 AM,Lalunggaon near Gorchuk area,Lalunggaon near Gorchuk area
+8366,glc,Meghalaya,East Khasi Hills,25.583,91.893,5km,5.0,28.61,7.3,False,False,09/23/2015 03:00:00 PM,"Shillong, Meghalaya, India","Shillong, Meghalaya, India"
+1934,glc,Assam,Karimganj,24.6005,92.3814,25km,25.0,13.72,12.54,True,True,06/03/2010 05:00:00 AM,Rongpur village under Bhairabhnagar panchayat in Karimganj district,Rongpur village under Bhairabhnagar panchayat in Karimganj district
+7655,glc,Arunachal Pradesh,Tawang,27.5799,91.8569,5km,5.0,10.85,10.85,False,False,04/22/2016 02:30:00 AM,"Tawang, Arunachal Pradesh","Tawang, Arunachal Pradesh"
+9464,glc,Arunachal Pradesh,Tawang,27.5754,91.9754,5km,5.0,10.99,10.84,False,False,08/05/2016 12:00:00 AM,Babrang village under Jang circle in Tawang district,Babrang village under Jang circle in Tawang district
+3912,glc,Arunachal Pradesh,West Kameng,27.44,92.2833,50km,50.0,23.01,19.5,True,True,08/12/2011 12:00:00 AM,East Kameng district in Arunachal Pradesh bordering China,East Kameng district in Arunachal Pradesh bordering China
+5272,glc,Nagaland,Zunheboto,26.2083,94.5438,1km,1.0,36.27,0.36,False,True,08/04/2013 12:00:00 AM,"Longsa, Nagaland","Longsa, Nagaland"
+580,glc,Manipur,Thoubal,24.6596,93.9784,unknown,,47.01,4.2,False,False,06/09/2008 12:00:00 AM,"near Kuloor church, in Manipur along National Highway","near Kuloor church, in Manipur along National Highway"
+5575,glc,Nagaland,Kohima,25.8266,94.1497,5km,5.0,19.94,8.42,False,False,10/05/2013 11:00:00 PM,"Chiechama, Nagaland","Chiechama, Nagaland"
+8996,glc,Assam,Kamrup,26.1768,91.7702,1km,1.0,8.11,2.52,False,False,07/14/2016 12:00:00 AM,"Pub Sarania hill, South Sarania, Guwahati, Assam, India","Pub Sarania hill, South Sarania, Guwahati, Assam, India"
+1613,glc,Arunachal Pradesh,Kurung Kumey,27.8997,93.3497,1km,1.0,48.98,14.72,False,False,04/02/2010 11:00:00 PM,"Koloriang, Kuring Kumey district, Arunachal Pradesh","Koloriang, Kuring Kumey district, Arunachal Pradesh"
+4857,glc,Mizoram,Aizawl,23.7281,92.7175,25km,25.0,43.16,5.37,False,True,05/11/2013 09:00:00 AM,"Laipuitland , Aizawl, Mizoram","Laipuitland , Aizawl, Mizoram"
+6945,glc,Manipur,Tamenglong,25.16,93.686,1km,1.0,9.0,9.0,False,False,06/19/2015 12:00:00 AM,"amei to Kangpokpi via Imphal road, 0.5 km from Tamei, Tamenglang District","amei to Kangpokpi via Imphal road, 0.5 km from Tamei, Tamenglang District"
+1857,glc,Meghalaya,Jaintia Hills,25.3433,92.2897,25km,25.0,25.11,16.93,False,True,05/11/2010 09:00:00 AM,"National highway 44 at Sunapur and Tongseng in Jaintia Hills district, eastern Meghalaya","National highway 44 at Sunapur and Tongseng in Jaintia Hills district, eastern Meghalaya"
+2743,glc,Arunachal Pradesh,Tawang,27.5798729,91.85672387,1km,1.0,10.84,10.84,False,False,11/22/2010 12:00:00 AM,"Tawang Monastery, Arunachal Pradesh","Tawang Monastery, Arunachal Pradesh"
+4845,glc,Mizoram,Kolasib,24.2315,92.6755,50km,50.0,6.88,6.88,True,True,05/07/2013 12:00:00 AM,"Kolasib, Saiha, Mizoram,","Kolasib, Saiha, Mizoram,"
+1770,glc,Assam,Kamrup,26.1965,91.763,1km,1.0,10.31,0.45,False,True,04/20/2010 12:00:00 AM,"Kharghuli, Guwahati, Assam","Kharghuli, Guwahati, Assam"
+7728,glc,Assam,Kamrup,26.1028,91.8806,5km,5.0,0.74,0.74,True,True,08/22/2015 09:00:00 AM,Natonal Highway in Jorabat area,Natonal Highway in Jorabat area
+5274,glc,Nagaland,Zunheboto,26.0838,94.564,25km,25.0,42.95,12.55,False,True,08/04/2013 12:00:00 AM,"Suruhuto Town, Nagaland","Suruhuto Town, Nagaland"
+7836,glc,Mizoram,Kolasib,24.042,92.6724,10km,10.0,20.69,3.47,False,True,08/27/2015 12:00:00 AM,"National Highway 54, at Kawnpui town","National Highway 54, at Kawnpui town"
+3776,glc,Arunachal Pradesh,Papum Pare,27.125,93.7145,5km,5.0,8.33,8.33,False,False,07/15/2011 06:00:00 PM,Itanagar/Naharlagur/Nirjuli,Itanagar/Naharlagur/Nirjuli
+7388,glc,Manipur,Chandel,24.416,94.0984,5km,5.0,24.62,7.66,False,False,08/01/2015 12:00:00 AM,Senam,Senam
+5421,glc,Nagaland,Mon,26.4205,94.9731,5km,5.0,9.87,4.03,False,True,08/30/2013 12:00:00 AM,"Yakshu, Nagaland","Yakshu, Nagaland"
+2343,glc,Manipur,Senapati,25.4786,94.1327,5km,5.0,5.05,5.05,False,False,08/27/2010 04:30:00 PM,"NH-39 at Ekai village(?), 2 km for Tadubi, Manipur","NH-39 at Ekai village(?), 2 km for Tadubi, Manipur"
+3619,glc,Sikkim,North Sikkim,27.4885,88.4451,unknown,,32.82,4.63,False,False,06/17/2011 07:30:00 PM,"National HWY 31A, Birik (cut off Sikkim)","National HWY 31A, Birik (cut off Sikkim)"
+3683,glc,Nagaland,Kohima,25.8782,94.1739,10km,10.0,19.86,4.26,False,True,07/01/2011 12:00:00 AM,NH-61 between Botsa and Chiechama,NH-61 between Botsa and Chiechama
+9619,glc,Sikkim,South Sikkim,27.1695,88.3664,5km,5.0,7.01,4.56,False,True,10/15/2016 12:00:00 AM,Namchi,Namchi
+7591,glc,Assam,Cachar,25.0318,92.4584,5km,5.0,0.37,0.37,True,True,03/19/2015 12:00:00 AM,Ratacherra,Ratacherra
+5441,glc,Arunachal Pradesh,Upper Siang,28.611,94.9829,5km,5.0,56.86,6.33,False,False,09/02/2013 12:00:00 AM,"Gosang Village Under Jengging Circle, Arunachal Pradesh","Gosang Village Under Jengging Circle, Arunachal Pradesh"
+9232,glc,Mizoram,Champhai,23.5397,93.3783,1km,1.0,4.41,4.41,False,False,07/28/2016 11:00:00 PM,"Ngur, near Mizoram-Myanmar border, India","Ngur, near Mizoram-Myanmar border, India"
+4434,glc,Assam,Kamrup,26.1049,91.7369,1km,1.0,4.14,4.14,False,False,06/25/2012 06:00:00 PM,"Sonaighuli area near Kahilipara, Guwahati City, Assam","Sonaighuli area near Kahilipara, Guwahati City, Assam"
+7214,glc,Arunachal Pradesh,East Kameng,27.36,93.0385,5km,5.0,42.47,16.98,False,False,07/15/2015 08:00:00 AM,Type-IV Colony of Seppa in East Kameng,Type-IV Colony of Seppa in East Kameng
+5582,glc,Assam,Kamrup,26.1309,91.8383,5km,5.0,1.81,1.81,True,True,10/06/2013 12:45:00 PM,"Batahguli, Guwahati, Assam","Batahguli, Guwahati, Assam"
+2405,glc,Arunachal Pradesh,East Siang,28.3036,95.4112,unknown,,42.96,1.06,False,False,09/09/2010 11:00:00 PM,"Mossing(Mosing) village(?), Upper Siang district, Arunachal Pradesh","Mossing(Mosing) village(?), Upper Siang district, Arunachal Pradesh"
+3556,glc,Manipur,Senapati,25.1555,93.8474,25km,25.0,23.55,5.28,True,True,05/31/2011 02:00:00 PM,"Roads between Tamei(Tamma?), Kangpokpi and Chalwa, Manipur","Roads between Tamei(Tamma?), Kangpokpi and Chalwa, Manipur"
+2569,glc,Manipur,Senapati,25.2745,94.0212,5km,5.0,29.36,6.59,False,False,10/08/2010 12:00:00 AM,"Bungte Chiru village(?), Senapati district, Manipur","Bungte Chiru village(?), Senapati district, Manipur"
+2423,glc,Mizoram,Aizawl,23.73504471,92.71060943,1km,1.0,42.3,5.11,False,False,09/13/2010 12:00:00 AM,"road to Kanan Veng from Hunthar Veng, Mizoram","road to Kanan Veng from Hunthar Veng, Mizoram"
+3532,glc,Assam,North Cachar Hills,25.0888,92.8551,10km,10.0,14.81,2.55,False,True,05/24/2011 12:00:00 AM,"Silchar-Haflong rd., at Reko(Rekha )(?), near Harangajao, Barail Hills, Assam","Silchar-Haflong rd., at Reko(Rekha )(?), near Harangajao, Barail Hills, Assam"
+2345,glc,Sikkim,East,27.3392,88.6188,5km,5.0,16.32,5.36,False,False,08/27/2010 06:00:00 PM,"Daragaon(?), Gangtok city, Sikkim","Daragaon(?), Gangtok city, Sikkim"
+7956,glc,Meghalaya,Ri-Bhoi,26.048,91.8695,1km,1.0,0.28,0.28,True,True,09/05/2015 12:00:00 AM,Byrnihat,Byrnihat
+2425,glc,Mizoram,Champhai,23.3439,93.0748,25km,25.0,29.73,3.08,False,True,09/13/2010 12:00:00 AM,"near Tuichang(?) on Tuichang river, Aizawl-Champhai rd, Mizoram","near Tuichang(?) on Tuichang river, Aizawl-Champhai rd, Mizoram"
+6970,glc,Meghalaya,West Garo Hills,25.5084,90.2191,1km,1.0,22.78,11.05,False,False,06/16/2015 12:00:00 AM,Akonggre,Akonggre
+5312,glc,Nagaland,Mokokchung,26.7103,94.693,10km,10.0,2.56,2.56,True,True,08/11/2013 11:00:00 PM,Kangtsung Village,Kangtsung Village
+1929,glc,Sikkim,East,27.3543,88.6428,5km,5.0,17.37,3.94,False,True,05/31/2010 11:00:00 PM,"North Sikkiim Highway, periphery of Gangtok, Sikkim East district","North Sikkiim Highway, periphery of Gangtok, Sikkim East district"
+2568,glc,Manipur,Tamenglong,24.7679,93.4108,25km,25.0,22.01,18.95,True,True,10/08/2010 12:00:00 AM,"Nungba, Tamenglong, Manipur","Nungba, Tamenglong, Manipur"
+7409,glc,Nagaland,Phek,25.72,94.6219,10km,10.0,4.14,4.14,True,True,08/02/2015 12:00:00 AM,Meluri Sub-Division in Phek District of Nagaland,Meluri Sub-Division in Phek District of Nagaland
+9219,glc,Nagaland,Zunheboto,26.0101,94.5282,5km,5.0,35.03,11.17,False,False,07/26/2016 11:00:00 PM,"Zunheboto, Nagaland, India","Zunheboto, Nagaland, India"
+2579,glc,Nagaland,Kohima,25.682,94.1076,1km,1.0,12.82,10.9,False,False,10/09/2010 12:00:00 AM,"Lower Pezielietsie(Tinpati), Kohima, Manipur","Lower Pezielietsie(Tinpati), Kohima, Manipur"
+8223,glc,Mizoram,Aizawl,23.7348,92.7187,5km,5.0,43.08,5.8,False,False,09/14/2015 03:10:00 AM,"Aizawl, Mizoram, India","Aizawl, Mizoram, India"
+7336,glc,Meghalaya,South Garo Hills,25.2193,90.5549,10km,10.0,5.04,5.04,True,True,08/19/2015 09:00:00 AM,NH-62 at Sibbari,NH-62 at Sibbari
+9252,glc,Arunachal Pradesh,Tawang,27.5748,91.8644,5km,5.0,10.31,10.31,False,False,07/28/2016 12:00:00 AM,"Dolma Lhakang complex, Lumla, Tawang,  Arunachal Pradesh, India","Dolma Lhakang complex, Lumla, Tawang,  Arunachal Pradesh, India"
+5300,glc,Manipur,Senapati,25.318,94.0441,50km,50.0,24.26,8.9,True,True,08/09/2013 12:00:00 AM,"Senapati, Manipur","Senapati, Manipur"
+7665,glc,Manipur,Tamenglong,24.7016,93.5291,5km,5.0,35.66,12.66,False,False,08/11/2015 12:00:00 AM,Khoupum,Khoupum
+1994,glc,Assam,Cachar,25.0633,92.8025,25km,25.0,15.72,2.45,True,True,06/16/2010 12:00:00 AM,"rails between Jatinga and Longrangjao(?), Assam","rails between Jatinga and Longrangjao(?), Assam"
+3760,glc,Nagaland,Kohima,25.6703,94.1095,25km,25.0,11.78,10.77,True,True,07/11/2011 09:00:00 AM,"NH-61, 1 km before reaching Botsa","NH-61, 1 km before reaching Botsa"
+692,glc,Nagaland,Kohima,25.705,94.04,10km,10.0,12.37,8.88,False,True,08/07/2008 12:00:00 AM,"National Highway-39, Dimapur-Imphal road and another under Kiphire district of Nagaland","National Highway-39, Dimapur-Imphal road and another under Kiphire district of Nagaland"
+3633,glc,Nagaland,Mokokchung,26.3186,94.5121,5km,5.0,25.23,3.51,False,True,06/20/2011 12:00:00 AM,Mokokchung,Mokokchung
+7374,glc,Manipur,Ukhrul,25.1122,94.3591,10km,10.0,25.53,15.55,False,False,08/01/2015 12:00:00 AM,Ukhrul town Circular road from Rayotang to Viewland Zone II,Ukhrul town Circular road from Rayotang to Viewland Zone II
+2341,glc,Sikkim,East,27.2319,88.497,10km,10.0,6.42,0.73,True,True,08/26/2010 11:00:00 PM,"NH-31A at Topakhani tunnel(?) and fruit preservation factory(?) and Chisopani bridge(?), near Singtam and Gangtok and Rangpo, Sikkim","NH-31A at Topakhani tunnel(?) and fruit preservation factory(?) and Chisopani bridge(?), near Singtam and Gangtok and Rangpo, Sikkim"
+2098,glc,Nagaland,Mon,26.7215,95.0283,5km,5.0,16.92,16.92,False,False,07/19/2010 06:00:00 AM,"Jahjon ward(?), Mon town, Nagaland","Jahjon ward(?), Mon town, Nagaland"
+269,glc,Sikkim,South Sikkim,27.2872,88.2816,50km,50.0,17.35,0.47,True,True,09/18/2007 12:00:00 AM,Geyzing-Jorethang road and Naya Bazar-Legship road,Geyzing-Jorethang road and Naya Bazar-Legship road
+2205,glc,Mizoram,Aizawl,23.7365,92.7146,1km,1.0,42.62,5.54,False,False,08/06/2010 12:00:00 AM,"Dawrpui Vengthar cemetary, Aizwal, Mizoram","Dawrpui Vengthar cemetary, Aizwal, Mizoram"
+4610,glc,Mizoram,Mamit,23.7705,92.5217,5km,5.0,23.08,11.08,False,False,11/11/2012 12:00:00 AM,"Dapchhuah, Mamit, Mizoram","Dapchhuah, Mamit, Mizoram"
+5275,glc,Nagaland,Zunheboto,26.1498,94.6055,10km,10.0,45.21,5.95,False,True,08/04/2013 12:00:00 AM,"Suruhuto Town, Nagaland","Suruhuto Town, Nagaland"
+2247,glc,Nagaland,Tuensang,26.148,94.8422,10km,10.0,27.46,13.87,False,False,08/14/2010 12:00:00 AM,"Tuensang-Shamatore(Sampurre) rd, Nagaland","Tuensang-Shamatore(Sampurre) rd, Nagaland"
+3927,glc,Meghalaya,West Garo Hills,25.5144,90.2167,unknown,,22.26,11.52,False,False,08/16/2011 08:00:00 AM,"Garo Hills, Tura","Garo Hills, Tura"
+259,glc,Meghalaya,West Khasi Hills,25.52,91.27,unknown,,23.09,23.09,False,False,09/11/2007 12:00:00 AM,"Assam-Agartala National Highway, Sonarpur in Jayantiya hills of Meghalaya","Assam-Agartala National Highway, Sonarpur in Jayantiya hills of Meghalaya"
+6112,glc,Assam,Kamrup,26.1964,91.7652,exact,0.0,10.18,0.43,False,False,06/28/2014 09:00:00 AM,"Kharghuli Hills, Assam","Kharghuli Hills, Assam"
+7390,glc,Manipur,Chandel,24.4265,94.1913,25km,25.0,16.78,14.76,True,True,08/01/2015 12:00:00 AM,between Tengnoupal-Sita junction and Tengnoupal Power Sub-Station,between Tengnoupal-Sita junction and Tengnoupal Power Sub-Station
+2420,glc,Mizoram,Aizawl,23.72988966,92.71495623,1km,1.0,42.92,5.22,False,False,09/13/2010 12:00:00 AM,"Tuikual 'C', Aizawl, Mizoram","Tuikual 'C', Aizawl, Mizoram"
+264,glc,Assam,Kamrup,26.1833,91.8,10km,10.0,7.43,2.39,True,True,09/13/2007 12:00:00 AM,Guwahati,Guwahati
+251,glc,Sikkim,South Sikkim,27.1667,88.35,50km,50.0,5.98,3.44,True,True,09/09/2007 12:00:00 AM,Hingdam village in South Sikkim,Hingdam village in South Sikkim
+6214,glc,Meghalaya,Ri-Bhoi,25.9702,91.8587,5km,5.0,6.94,6.94,False,False,10/05/2014 05:45:00 PM,Jorabat-Umiam route,Jorabat-Umiam route
+3944,glc,Sikkim,North Sikkim,27.7344,88.633,10km,10.0,20.22,20.22,False,False,08/25/2011 12:00:00 AM,"Hee-Khola, Sikkim","Hee-Khola, Sikkim"
+4411,glc,Sikkim,East,27.339,88.6065,5km,5.0,16.14,5.44,False,False,06/14/2012 04:00:00 AM,"Tathangchen, Gangtok, Sikkim ","Tathangchen, Gangtok, Sikkim "
+252,glc,Manipur,Senapati,25.4993,94.1192,25km,25.0,3.06,3.06,True,True,09/09/2007 12:00:00 AM,"Mao in Manipur, Phipema and Chunikhudima in Nagaland","Mao in Manipur, Phipema and Chunikhudima in Nagaland"
+142,glc,Meghalaya,West Garo Hills,25.5212,90.232,10km,10.0,23.35,10.49,False,False,07/27/2007 12:00:00 AM,Tura,Tura
+7384,glc,Manipur,Chandel,23.9278,94.0906,5km,5.0,3.7,3.7,True,True,08/01/2015 12:00:00 AM,"Wayang, Khengjoi","Wayang, Khengjoi"
+211,glc,Manipur,Tamenglong,24.9667,93.55,5km,5.0,25.93,16.81,False,False,08/26/2007 12:00:00 AM,Tamenglong,Tamenglong
+4384,glc,Assam,North Cachar Hills,25.1775,93.0123,5km,5.0,21.43,8.18,False,False,06/03/2012 12:00:00 AM,"between Haflong and  Bagetar, Assam","between Haflong and  Bagetar, Assam"
+4383,glc,Assam,North Cachar Hills,25.3056,93.1265,5km,5.0,26.61,23.68,False,False,06/03/2012 12:00:00 AM,"between Maibang and Daotohaja, Assam","between Maibang and Daotohaja, Assam"
+7375,glc,Manipur,Ukhrul,25.1941,94.4481,25km,25.0,14.02,14.02,True,True,08/01/2015 12:00:00 AM,Ukhrul NH 201-Jessami road,Ukhrul NH 201-Jessami road
+2163,glc,Manipur,Senapati,25.4196,94.1054,5km,5.0,12.03,12.03,False,False,07/29/2010 12:00:00 AM,"Maram area in Senapati district, National Highway 39","Maram area in Senapati district, National Highway 39"
+3932,glc,Nagaland,Kohima,25.83,94.13,exact,0.0,18.07,10.03,False,False,08/18/2011 12:00:00 AM, Botsa  and Chiechama, Botsa  and Chiechama
+4861,glc,Manipur,Tamenglong,24.9926,93.4946,25km,25.0,19.7,19.7,True,True,05/12/2013 12:00:00 AM,"Khongsang, Tamenglong, Manipur,","Khongsang, Tamenglong, Manipur,"
+7972,glc,Mizoram,Serchhip,23.4495,92.8112,25km,25.0,44.89,1.0,False,True,08/28/2015 01:45:00 AM,"Mizoram, India","Mizoram, India"
+3831,glc,Manipur,East Imphal,24.7992,93.948,unknown,,56.43,0.59,False,False,07/22/2011 12:00:00 AM,Heibok Hills,Heibok Hills
+5584,glc,Assam,Kamrup,26.1665,91.7049,5km,5.0,11.14,6.46,False,False,10/06/2013 12:00:00 AM,"Nilachal Hill, Guwahati, Assam","Nilachal Hill, Guwahati, Assam"
+1986,glc,Nagaland,Mokokchung,26.3335,94.5512,1km,1.0,26.42,4.84,False,False,06/15/2010 12:00:00 AM,"Fazl Ali College, Mokokchung, Nagaland","Fazl Ali College, Mokokchung, Nagaland"
+7387,glc,Manipur,Ukhrul,24.954,94.2156,50km,50.0,42.9,3.9,True,True,08/01/2015 12:00:00 AM,Imphal-Ukhrul road,Imphal-Ukhrul road
+2573,glc,Assam,North Cachar Hills,25.1796,93.0083,5km,5.0,20.99,8.51,False,False,10/09/2010 12:00:00 AM,"Haflong, Assam","Haflong, Assam"
+319,glc,Manipur,Senapati,25.4379,94.1162,50km,50.0,9.81,9.81,True,True,10/19/2007 12:00:00 AM,"Maram-Purul Road, Karong Assembly Constituency of Senapati district, Manipur","Maram-Purul Road, Karong Assembly Constituency of Senapati district, Manipur"
+313,glc,Nagaland,Kohima,25.7055,94.0132,5km,5.0,12.16,6.44,False,False,10/16/2007 12:00:00 AM,"NH-39 at Piphema,  6 km towards Dimapur from Kohima in Nagaland","NH-39 at Piphema,  6 km towards Dimapur from Kohima in Nagaland"
+9010,glc,Arunachal Pradesh,Papum Pare,27.3034,93.804,5km,5.0,11.8,3.37,False,True,07/16/2016 12:00:00 AM,"Hoj-Potin Highway, Arunachal Pradesh, India","Hoj-Potin Highway, Arunachal Pradesh, India"
+2539,glc,Arunachal Pradesh,East Siang,28.3092,95.4149,25km,25.0,43.36,0.8,False,True,10/03/2010 12:00:00 AM,"Mosing village, Upper Siang district, Arunachal Pradesh","Mosing village, Upper Siang district, Arunachal Pradesh"
+6331,glc,Nagaland,Tuensang,25.9466,94.6279,25km,25.0,28.22,0.99,False,True,09/08/2014 12:00:00 AM,Kiphire-Seyochung road near Yangzitong village,Kiphire-Seyochung road near Yangzitong village
+5485,glc,Sikkim,North Sikkim,27.6047,88.6463,50km,50.0,12.65,12.65,True,True,09/08/2013 12:00:00 AM,"Chungthang, Sikkim","Chungthang, Sikkim"
+1987,glc,Assam,North Cachar Hills,25.2269,93.1658,25km,25.0,19.49,18.14,True,True,06/15/2010 12:00:00 AM,"rails between Mahur and Wadringdisa(?), Assam","rails between Mahur and Wadringdisa(?), Assam"
+2043,glc,Nagaland,Mon,26.7225,95.0281,5km,5.0,17.0,17.0,False,False,07/06/2010 12:00:00 AM,"Mon, Nagaland","Mon, Nagaland"
+7910,glc,Manipur,Chandel,24.3481,94.1146,10km,10.0,21.39,14.49,False,False,08/01/2015 12:00:00 AM,Chandel,Chandel
+6775,glc,Assam,Kamrup,26.1468,91.6469,5km,5.0,12.88,12.35,False,False,02/14/2015 12:00:00 AM,Kailashpur hill,Kailashpur hill
+1776,glc,Meghalaya,Jaintia Hills,25.3612,92.2845,25km,25.0,26.46,16.71,False,True,04/21/2010 12:00:00 AM,Shillong-Jowai(Jwai)-Badarpur National Highway(NH 44) at Sunapur village in Jaintia Hills District,Shillong-Jowai(Jwai)-Badarpur National Highway(NH 44) at Sunapur village in Jaintia Hills District
+6786,glc,Assam,Hailakandi,24.6108,92.562,5km,5.0,22.55,5.35,False,False,02/19/2015 11:00:00 PM,"Hailākāndi : Two labourers died while another was injured in a landslide in Assam's Hailakandi district, the police said today.",
+6291,glc,Meghalaya,West Garo Hills,25.7354,90.3852,25km,25.0,21.97,2.67,True,True,09/21/2014 12:00:00 AM,National Highway 51,National Highway 51
+6213,glc,Meghalaya,East Garo Hills,25.8143,90.5763,unknown,,10.21,10.21,False,False,09/24/2014 12:00:00 AM,Meghalaya,Meghalaya
+2415,glc,Nagaland,Kohima,25.63961883,94.11112157,25km,25.0,9.03,9.03,True,True,09/12/2010 12:00:00 AM,power lines 5 km from Kohima,power lines 5 km from Kohima
+9336,glc,Assam,Hailakandi,24.5308,92.5121,1km,1.0,23.74,0.27,False,True,05/18/2016 08:00:00 AM,"Ramchandi , Hailakandi District, Assam, India","Ramchandi , Hailakandi District, Assam, India"
+9604,glc,Sikkim,West Sikkim,27.2676,88.2891,10km,10.0,15.21,0.09,False,True,10/12/2016 12:00:00 AM,Legship,Legship
+7837,glc,Mizoram,Aizawl,23.7269,92.7265,5km,5.0,44.06,6.19,False,False,08/27/2015 12:00:00 AM,three graveyards within Aizawl,three graveyards within Aizawl
+7267,glc,Manipur,Senapati,25.3908,94.0926,10km,10.0,15.39,15.39,False,False,07/22/2015 12:00:00 AM,NH-2 between Senapati and Mao,NH-2 between Senapati and Mao
+4848,glc,Tripura,West Tripura,24.0896,91.4663,5km,5.0,0.93,0.93,True,True,05/08/2013 12:00:00 AM,"Purba Simna, Tripura","Purba Simna, Tripura"
+9122,glc,Assam,Kamrup,26.1966,91.802,5km,5.0,8.83,1.01,False,True,07/20/2016 12:00:00 AM,"Noonmati, Guwahati, Assam, India","Noonmati, Guwahati, Assam, India"
+2574,glc,Assam,North Cachar Hills,25.4749,93.1477,50km,50.0,20.13,10.35,True,True,10/09/2010 12:00:00 AM,"between Mahur and Maigrandisa(?) or Lumding, Assam","between Mahur and Maigrandisa(?) or Lumding, Assam"
+6282,glc,Assam,Kamrup,26.1097,91.7747,5km,5.0,2.09,2.09,True,True,09/22/2014 12:00:00 AM,Lalmati,Lalmati
+2263,glc,Nagaland,Tuensang,26.2753,94.6654,25km,25.0,38.97,6.16,False,True,08/17/2010 12:00:00 AM,"Dikhu bridge(?), Mokokchung-Tuensang road, Nagaland","Dikhu bridge(?), Mokokchung-Tuensang road, Nagaland"
+6289,glc,Assam,Kamrup,26.1001,91.6849,5km,5.0,6.49,6.49,False,False,09/22/2014 12:00:00 AM,Pamohi,Pamohi
+9087,glc,Arunachal Pradesh,East Siang,28.235,94.9612,50km,50.0,49.61,2.53,True,True,07/19/2016 12:00:00 AM,"5 km off Sangam point on Aalo- Pangin road, Arunachal Pradesh, India","5 km off Sangam point on Aalo- Pangin road, Arunachal Pradesh, India"
+130,glc,Assam,Kamrup,26.1699,91.7986,25km,25.0,6.05,3.76,True,True,07/19/2007 12:00:00 AM,Guwahati,Guwahati
+9965,,Nagaland,Mokokchung,26.324724,94.514651,1km,1.0,24.9,4.2,False,False,09/05/2016 06:04:00 PM,Landslide in Nagaland,"Mokochung, Nagaland, India"
+9853,,Sikkim,North Sikkim,27.593,88.492,exact,0.0,27.29,15.83,False,False,08/16/2016 07:22:00 PM,Landslide in Dzongu,"Dzongu, Sikkim, India"
+9966,,Nagaland,Wokha,26.092493,94.257523,,,25.34,7.98,False,False,09/05/2016 06:04:00 PM,Landslide in Wokha-Merapani Road,"Wokha, India"
+9984,,Nagaland,Wokha,26.1445447,94.24416766,5km,5.0,21.58,10.19,False,False,07/01/2017 04:00:00 PM,Landslide along Wokha-Merapani road,"Wokha Sadar Sub-District, Wokha, Nagaland"
+9940,,Assam,Kamrup,26.20450454,91.87202793,1km,1.0,10.62,1.41,False,False,07/03/2017 03:17:00 PM,Landslide in Panikhaiti kills girl,"Panikhaiti, Kamrup Metropolitan, Assam State, India"
+9974,,Manipur,Senapati,25.4976444,94.12901274,1km,1.0,3.04,3.04,False,False,07/04/2017 04:00:00 PM,Landslide blocks road,"AH1, Mao-Maram, Senapati, Manipur, 795150"
+9972,,Assam,Kamrup,26.22247247,91.92053028,10km,10.0,14.57,1.55,False,True,07/03/2017 04:00:00 PM,Fatal landslide in Chandrapur,"Chandrapur, Kamrup Metropolitan, Assam"
+9951,,Assam,Kamrup,26.1061808,91.85158907,5km,5.0,0.03,0.03,True,True,07/03/2017 02:33:00 PM,Landslide hits Jorabat,"Jorabat, Assam State, India"
+9952,,Assam,Kamrup,26.10430759,91.86227824,5km,5.0,0.3,0.3,True,True,07/03/2017 02:33:00 PM,Landslide hits Jorabat,"Sonapur, Kamrup Metropolitan, Assam"
+9998,,Arunachal Pradesh,Upper Subansiri,27.98531715,94.21263589,1km,1.0,38.49,14.42,False,False,07/04/2017 07:39:00 PM,Landslide in Daporijo,"Abotani Colony, Daporijo Township, Arunachal Pradesh, India"
+9983,,Nagaland,Wokha,26.11613908,94.24222574,5km,5.0,22.78,9.91,False,False,07/01/2017 04:00:00 PM,Landslides blocks Wokha-Merapani Road,"Wokha Sadar Sub-District, Wokha, Nagaland"
+9993,,Arunachal Pradesh,Upper Subansiri,27.97875751,94.26296826,10km,10.0,37.58,16.6,False,False,07/04/2017 07:39:00 PM,Landslide along Daporijo-Dumporijo road,"Daporijo-Dumporijo road, Arunachal Pradesh, India"
+9989,,Mizoram,Aizawl,23.69461107,92.87641207,10km,10.0,45.18,12.05,False,False,06/28/2017 04:00:00 PM,Landslide damages road,"Aizawl, Mizoram State, India"
+9982,,Nagaland,Mokokchung,26.3312531,94.55427723,1km,1.0,26.81,4.48,False,False,07/01/2017 04:00:00 PM,Landslide blocks roads,"Chuchuyimpang, Mokokchung, Nagaland"
+9829,,Arunachal Pradesh,Papum Pare,27.06992579,93.6146564,1km,1.0,11.31,11.31,False,False,06/19/2017 01:15:00 PM,Landslide in Chimpu,
+9877,,Manipur,Churachandpur,24.21988831,93.20266204,10km,10.0,15.03,15.03,False,False,06/26/2017 01:20:00 PM,Landslide blocks NH-2 between Pherzawl and Bukpi,"NH-2, Pherzawl District, Manipur State, India"
+9750,,Assam,North Cachar Hills,25.15246863,92.94670614,50km,50.0,16.11,6.99,True,True,06/04/2017 01:34:00 PM,"Flood, Landslide in Assam",Dima Hasao district
+9876,,Manipur,Churachandpur,24.30415689,93.18182448,5km,5.0,14.69,14.69,False,False,06/27/2017 01:20:00 PM,Landslide cuts off NH 2,"NH 2, Manipur State, India"
+9869,,Arunachal Pradesh,Tirap,26.88161,95.399897,25km,25.0,13.7,13.7,True,True,08/16/2016 12:40:00 PM,Landslide at Longding,"Longding, India"
+9733,,Tripura,Dhalai,23.86469956,91.8949662,50km,50.0,16.64,11.28,True,True,06/03/2017 01:20:00 PM,Landslide in Tripura,Vidyamohan Chowdhury Para (???) of remote Dhalai district
+9743,,Arunachal Pradesh,Papum Pare,27.05909317,93.54235868,5km,5.0,11.9,11.9,False,False,06/04/2017 01:34:00 PM,Landslide near Itangar,"Poma River, west of Itangar"
+9834,,Arunachal Pradesh,Papum Pare,27.05880384,93.54136779,1km,1.0,11.88,11.88,False,False,06/21/2017 06:51:00 PM,Landslide in Itanagar,"Poma, 6km away from Itanagar"
+9789,,Meghalaya,Ri-Bhoi,25.907233,91.881892,exact,0.0,11.0,11.0,False,False,05/26/2017 04:59:00 PM,Retaining wall collapse in Nongpoh,"St Paul's Secondary School, Nongpoh"
+9742,,Nagaland,Kohima,25.67061161,94.11844319,1km,1.0,12.27,9.87,False,False,06/02/2017 01:34:00 PM,Landslide in Kohima,"The road that connects civil secretariat and medical college site towards BSF camp at Nhachüko, Kohima"
+9875,,Manipur,Churachandpur,24.32420539,93.15020652,5km,5.0,11.03,11.03,False,False,06/26/2017 01:20:00 PM,Landslide destroys section of National Highway 2,"NH 2, Manipur State, India"
+9712,,Mizoram,Aizawl,23.73354779,92.74744512,1km,1.0,45.88,8.44,False,False,06/10/2017 01:27:00 PM,"Landslide in Aizawl, kills 2",
+9704,,Manipur,Ukhrul,25.11956675,94.36416626,50km,50.0,24.7,15.38,True,True,06/12/2017 01:27:00 PM,Mudslide in Eastern Manipur,"Khaivarentang village (??) in Ukhrul, Manipur"
+9745,,Tripura,Dhalai,24.19467451,91.82931979,10km,10.0,1.31,1.31,True,True,06/03/2017 01:34:00 PM,Landslide in Kamalpur,Kamalpur
+9934,,Arunachal Pradesh,West Kameng,27.01145644,92.64204045,1km,1.0,0.14,0.14,True,True,07/01/2017 03:17:00 PM,Landslide blocks road,"Bhalukpong, West Kameng, Arunachal Pradesh"
+9785,,Sikkim,North Sikkim,27.54295099,88.59676956,5km,5.0,16.97,16.34,False,False,05/26/2017 01:34:00 PM,Rockslide in North Sikkim,"Toong-Sankalang road between Saffo and Ship-Gyer, North Sikkim"
+9904,,Nagaland,Kohima,25.660517,94.104931,25km,25.0,10.61,10.61,True,True,08/25/2016 06:59:00 PM,Mudslide near Kohima,"Near Kohima, Nagaland, India"
+9931,,Manipur,Senapati,25.06657276,93.9310888,1km,1.0,35.64,0.32,False,True,06/30/2017 03:17:00 PM,NH-2 blocked by landslide along Imphal-Dimapur section,Torrential downpour causes road-blocking lansdlide along NH-2 near Bimparao village
+9917,,Assam,Cachar,24.768609,92.821182,50km,50.0,26.52,14.42,True,True,09/01/2016 02:32:00 PM,Landslide in Silchar,"Silchar, Assam, India"
+9932,,Arunachal Pradesh,Papum Pare,27.10647226,93.65975252,exact,0.0,11.33,11.33,False,False,07/01/2017 03:17:00 PM,Landslide near Dree Festival Ground,"Dree Festival Ground, NH-415, Arunachal Pradesh, India"
+9935,,Arunachal Pradesh,Papum Pare,27.08168565,93.60815652,5km,5.0,12.63,12.63,False,False,07/01/2017 03:17:00 PM,House in Itanagar washed away by landslide,"Sanglo Potum (??), Itanagar, Papum Pare, Arunachal Pradesh"
+9797,,Arunachal Pradesh,Kurung Kumey,27.769793,93.50995626,25km,25.0,68.3,1.37,False,True,05/24/2017 08:14:00 PM,Mudslide in on Sarli-Damin road,"Sarli-Damin road in Kurung Kumey district, near Lee village"
+9770,,Mizoram,Aizawl,23.73941422,92.71505961,5km,5.0,42.56,5.76,False,False,06/01/2017 01:34:00 PM,"Landslide in Mizoram, off of Aizawl","Hunthar Area, NH 54, off of Aizawl"
+9933,,Arunachal Pradesh,Papum Pare,27.04768643,93.61899644,1km,1.0,9.3,9.3,False,False,06/30/2017 03:17:00 PM,Landslide threatens orphanage with collapse,"Jollang, Itanagar Sub-District, Papum Pare, Arunachal Pradesh, 791123"
+9948,,Manipur,Ukhrul,24.95178179,94.20340026,1km,1.0,43.73,2.64,False,False,07/01/2017 02:33:00 PM,Landslide causes Ukhrul-Imphal road to sink,"NH-150, Ukhrul Central, Ukhrul, Manipur, 795142"
+9949,,Assam,Kamrup,26.10035658,91.87351723,1km,1.0,0.22,0.22,True,True,07/03/2017 02:33:00 PM,Landslide opposite Jorabat Police Outpost,"G S Road, Sonapur, Kamrup Metropolitan, Assam, 781141"
+10004,,Assam,Kamrup,26.14547804,91.79364785,1km,1.0,3.92,3.92,False,False,07/10/2017 02:21:00 PM,Landslide damages house,"Dispur, Kamrup Metropolitan, Assam"
+7838,,Mizoram,Aizawl,23.6866,93.017,50km,50.0,40.41,1.1,True,True,08/27/2015 12:00:00 AM,the state highway which links the rest of the state to eastern Champhai district,the state highway which links the rest of the state to eastern Champhai district
+10007,,Assam,Kamrup,26.19037705,91.77306002,1km,1.0,9.21,0.99,False,True,07/10/2017 02:21:00 PM,Landslide in Chandmari,"Chandmari, Guwahati, Kamrup Metropolitan, Assam, 781003"
+10972,,Assam,Kamrup,26.191688,91.810079,1km,1.0,8.16,1.75,False,False,12/15/2016 02:22:00 PM,Landslide at Noonmati Nijarapar,"Noonmati Nijarapar, Assam, India"
+10005,,Assam,Kamrup,26.10973183,91.80317334,10km,10.0,0.55,0.55,True,True,07/06/2017 07:39:00 PM,Landslide crushes house,"Beltola, Assam State-Meghalaya State border, India"
+9428,,Arunachal Pradesh,Tawang,27.5523,91.752,10km,10.0,7.92,7.92,True,True,04/22/2016 09:30:00 PM,"Thongleng village, Lumla, Tawang, Arunachal Pradesh, India","Thongleng village, Lumla, Tawang, Arunachal Pradesh, India"
+10024,,Nagaland,Dimapur,25.83762589,93.94633448,5km,5.0,5.59,3.44,False,True,06/25/2017 01:10:00 PM,"Landslide on road near Ghokuto village, Nagaland","Ghokuto, Nagaland"
+11152,,Manipur,Ukhrul,25.08303063,94.23757741,exact,0.0,38.01,9.63,False,False,04/06/2017 01:19:00 PM,Landslide in Sirakhong,"Sirakhong, Ukhrul Central, Ukhrul, Manipur State, India"
+11167,,Arunachal Pradesh,Papum Pare,27.11610665,93.79559574,10km,10.0,1.89,1.89,True,True,07/09/2017 01:23:00 PM,Landslide on road near Durga Mandir,"Naharlagun Sub-District, Papum Pare, Arunachal Pradesh"
+10980,,Assam,North Cachar Hills,25.181453,93.118105,1km,1.0,21.04,11.19,False,False,04/04/2017 12:57:00 PM,Landslide in Mahur,"Mahur, Assam, India"
+10988,,Meghalaya,Ri-Bhoi,25.82601444,91.87113067,1km,1.0,19.96,9.1,False,False,07/09/2017 06:45:00 PM,Landslide on NH-6,"Pahamrynnai, Ribhoi, Meghalaya"
+11176,,Arunachal Pradesh,Upper Subansiri,28.10756941,94.18315697,5km,5.0,52.33,19.8,False,False,06/20/2017 01:16:00 PM,Fatal landslide in Gussar circle,"Gussar, Upper Subansiri, Arunachal Pradesh"
+11150,,Manipur,Senapati,24.79591421,93.72386429,10km,10.0,46.65,3.26,False,True,03/30/2017 08:28:00 PM,NH-37 Landslide in the Tamenglong District,"NH-37, between T. Laijang and K. Sinam villages, Tamenglong district, Manipur, 795008"
+10957,,Mizoram,Lunglei,22.90813548,92.47207294,100km,100.0,2.99,2.99,True,True,06/09/2017 02:21:00 PM,Landslides throuhgout Lunglei District,"Tlabung, Lungsen, Lunglei, Mizoram"
+10985,,Meghalaya,East Khasi Hills,25.43807422,91.79904872,1km,1.0,28.65,14.5,False,False,06/17/2017 06:45:00 PM,Fatal landslide in Mawjrong,"Khatarshnong Laitkroh, East Khasi Hills, Meghalaya"
+10989,,Meghalaya,East Khasi Hills,25.51826286,91.9630294,1km,1.0,26.18,13.79,False,False,02/15/2017 10:56:00 PM,Stone Quarry Landslide in Lamlyer,"Mawryngkneng, East Khasi Hills, Meghalaya"
+10974,,Assam,Kamrup,26.16066111,91.85294885,5km,5.0,5.41,5.41,False,False,04/05/2017 01:19:00 PM,Fatal landslide in Bonda,"Bonda, Guwahati, Assam, India"
+11175,,Arunachal Pradesh,Kurung Kumey,27.82743132,93.62407259,1km,1.0,62.55,0.45,False,True,05/03/2017 02:05:00 PM,Fatal landslide in Yangte,"Yangte, Kra Daadi District, Arunachal Pradesh, India"
+10962,,Mizoram,Aizawl,23.65637182,93.02746602,5km,5.0,40.12,0.46,False,True,06/17/2017 01:16:00 PM,Landslide damages Aizawl-Champhai Road,"Aizawl-Champhai road, Champhai, Mizoram State, India"
+11164,,Arunachal Pradesh,Papum Pare,27.1071241,93.65156438,5km,5.0,11.83,11.83,False,False,07/09/2017 01:23:00 PM,Landslides on Itanagar-Naharlagun road,"NH-52A, Naharlagun Sub-District, Papum Pare, Arunachal Pradesh, 791111"
+10977,,Assam,North Cachar Hills,25.481623,93.141692,50km,50.0,20.41,10.19,True,True,04/04/2017 12:57:00 PM,Landslides along National Highway 54,
+11153,,Manipur,West Imphal,24.83507319,93.89896294,5km,5.0,50.27,2.46,False,True,07/09/2017 01:23:00 PM,Landslide in Langol Laimanai,"Langol Laimanai, Imphal West, Manipur"
+11168,,Arunachal Pradesh,Papum Pare,27.21668161,93.63051815,1km,1.0,18.79,12.98,False,False,07/11/2017 02:21:00 PM,Large landslide at Laptap village,"Laptap, Papum Pare, Arunachal Pradesh, India"
+10967,,Manipur,Churachandpur,24.37169581,93.70684171,25km,25.0,40.21,4.11,False,True,07/10/2017 06:45:00 PM,Landslide near Molnom blocks road,"NH-150, Churachandpur, Manipur, 795133"
+10987,,Meghalaya,Ri-Bhoi,25.67836832,91.9234343,5km,5.0,23.02,0.92,False,True,06/17/2017 06:45:00 PM,Fatal landslide in Umiam,"Umiam, Ribhoi, Meghalaya"
+11172,,Arunachal Pradesh,Papum Pare,27.0844941,93.60505989,5km,5.0,13.07,13.07,False,False,07/09/2017 01:23:00 PM,Landslide at Niti Vihar,"Niti Vihar, Itanagar, Arunachal Pradesh, India"
+10979,,Assam,North Cachar Hills,25.195355,93.172758,1km,1.0,17.91,16.15,False,False,04/04/2017 12:57:00 PM,Landslide in Phaiding,"Phaiding, Assam, India"
+10963,,Mizoram,Serchhip,23.33501164,92.85410625,10km,10.0,42.36,2.05,False,True,06/12/2017 02:21:00 PM,Damaging landslide in Serchhip District,"Serchhip District, Mizoram, 796230"
+10968,,Manipur,Churachandpur,24.27173018,93.28039349,1km,1.0,18.9,18.9,False,False,07/09/2017 01:23:00 PM,Landslide blocks road near Thanlon,"Thanlon, Churachandpur, Manipur"
+11177,,Arunachal Pradesh,Tawang,27.583849,91.876945,5km,5.0,11.4,11.4,False,False,07/11/2017 02:24:00 PM,Landslide in Tawang,"Tawang, Arunchal Pradesh"
+11158,,Nagaland,Kohima,25.69111465,94.09483333,1km,1.0,12.9,12.24,False,False,07/12/2017 01:28:00 PM,"Landslide destroys houses in Kohiama, near High School area","Kohima, Nagaland, India"
+11183,,Sikkim,East,27.360364,88.651914,100km,100.0,16.26,3.42,True,True,07/10/2017 12:55:00 PM,"Cars crushed by deadly landslide on Chongey road, Sikkim",East Sikkim
+11170,,Arunachal Pradesh,Papum Pare,27.14163897,93.66495709,5km,5.0,13.16,13.16,False,False,07/09/2017 01:23:00 PM,Mudslides in Borum and Nyorch,"Naharlagun Sub-District, Papum Pare, Arunachal Pradesh"
+11169,,Arunachal Pradesh,Papum Pare,27.05957271,93.50102778,10km,10.0,12.58,12.58,False,False,07/09/2017 02:21:00 PM,Landslide on Itanagar- Jote-Tapiasso road,"Itanagar- Jote-Tapiasso road, Papum Pare, Arunachal Pradesh"
+11171,,Arunachal Pradesh,Papum Pare,27.104022,93.61156568,1km,1.0,14.13,14.13,False,False,04/26/2017 01:17:00 PM,Landslide on Senki View road,"Senki View, Itanagar, Papum Pare, Arunachal Pradesh, India"
+10976,,Assam,North Cachar Hills,25.118398,92.853913,1km,1.0,11.95,5.49,False,False,04/04/2017 12:57:00 PM,Landslide in Harangajao,"Harangajao, Assam, India"
+10978,,Assam,North Cachar Hills,25.132228,93.04681,1km,1.0,23.93,2.92,False,False,04/04/2017 12:57:00 PM,Landslide in N. Leikul,"N. Leikul, Assam, India"
+11165,,Arunachal Pradesh,Papum Pare,27.092916,93.61882043,exact,0.0,12.74,12.74,False,False,07/09/2017 01:23:00 PM,"Landslide near Civil Secretariat, Itanagar","Civil Secretariat, Itanagar, Arunachal Pradesh, India"
+11159,,Nagaland,Kohima,25.6320357,94.10065403,10km,10.0,7.72,7.72,True,True,07/09/2017 01:23:00 PM,Landslide on NH-2 between Sinam and Laijang,"Jakhama, Kohima, Nagaland"
+11178,,Assam,Sonitpur,26.96437841,92.78260587,10km,10.0,7.05,7.05,True,True,06/18/2017 01:16:00 PM,Landslide traps commuters,"Bhalukpong, Assam"
+11163,,Assam,Lakhimpur,26.95223279,93.85748748,1km,1.0,13.11,6.69,False,False,07/10/2017 02:21:00 PM,Fatal landslide in Narayanpur,"Narayanpur, Lakhimpur, Assam, 784164"
+10961,,Mizoram,Kolasib,24.0135808,92.67420963,50km,50.0,23.17,3.56,True,True,04/25/2017 05:58:00 PM,Landslide blocks NH-54,"NH-54, North Thingdawl, Kolasib, Mizoram, 796075"
+11156,,Nagaland,Kohima,25.73318099,93.99655231,1km,1.0,15.35,3.6,False,False,05/16/2017 02:05:00 PM,Landslide on NH-29 between Dimapur and Kohima,"NH-29, Sechu (Zubza), Kohima, Nagaland, 797002"
+11161,,Nagaland,Mokokchung,26.66354481,94.62220277,5km,5.0,5.27,4.9,False,True,06/24/2017 01:23:00 PM,Landslide on road isolates villages,"Alongkima, Mokokchung, Nagaland"
+11155,,Nagaland,Kohima,25.72019272,94.03225673,5km,5.0,13.91,7.37,False,False,07/08/2017 01:23:00 PM,Landslides at Kiruphema village,"Kiruphema village, Kohima, Nagaland"
+11154,,Nagaland,Dimapur,25.77171292,93.93507183,5km,5.0,9.77,3.9,False,True,04/07/2017 01:19:00 PM,Landslide blocks NH-29 between Pherima and Phiphema,"Medziphema, Dimapur, Nagaland"
+10986,,Meghalaya,Ri-Bhoi,25.82860033,91.876717,1km,1.0,19.54,9.73,False,False,07/06/2017 01:16:00 PM,Landslide on NH-6,"Umsning, Ribhoi, Meghalaya State, India"
+11166,,Arunachal Pradesh,Papum Pare,27.07671517,93.59755441,5km,5.0,12.79,12.79,False,False,07/09/2017 01:23:00 PM,Landslides in Aalo,"Aalo, Itanagar, Papum Pare, Arunachal Pradesh"
+10960,,Mizoram,Aizawl,23.725943,92.7178,5km,5.0,43.16,5.31,False,False,09/17/2016 02:54:00 PM,Landslide in Mizoram,"Mizoram, India"
+11157,,Nagaland,Kohima,25.73111942,93.98827528,1km,1.0,15.24,2.98,False,False,07/09/2017 01:23:00 PM,Significant landslide blocks NH-29 near Peducha,"Peducha, Kohima, Nagaland State, India"
+11151,,Manipur,Ukhrul,25.06466676,94.27420555,100km,100.0,35.56,12.68,True,True,07/08/2017 01:23:00 PM,Landslides along Lamlang River,"Ukhrul Central, Ukhrul, Manipur"
+11160,,Nagaland,Tuensang,26.2632687,94.81481951,5km,5.0,30.53,13.97,False,False,07/10/2017 02:21:00 PM,Landslide in Tuensang Village,"Tuensang, Nagaland"
+11174,,Arunachal Pradesh,Lower Subansiri,27.6802471,93.62592773,1km,1.0,53.23,11.58,False,False,04/22/2017 06:27:00 PM,Fatal landslide near Palin,"Palin, Kurung Kumey, Arunachal Pradesh"
+11149,,Manipur,Tamenglong,24.82767572,93.51825,10km,10.0,28.6,15.32,False,False,07/09/2017 01:23:00 PM,Landslide on NH-37,"NH-37, Manipur State, India"
+11173,,Arunachal Pradesh,Lower Subansiri,27.61790706,93.84196894,10km,10.0,33.8,15.75,False,False,04/22/2017 06:27:00 PM,Landslide at IMC Ward Number 18,"IMC ward #18 (??), Lower Subansiri, Arunachal Pradesh"
+10975,,Assam,Karbi Anglong,25.61919207,92.7094701,25km,25.0,6.19,1.89,True,True,04/29/2017 01:17:00 PM,Fatal landslide in Makhim village,"Makhim (??), West Karbi Anglong, Assam"
+11162,,Assam,Nagaon,26.56636244,93.13195098,5km,5.0,39.03,1.67,False,True,07/09/2017 06:45:00 PM,Landslide blocks NH-37,"Burapahar, Nagaon, Assam"
+10973,,Assam,Kamrup,26.181606,91.772042,1km,1.0,8.43,1.97,False,False,12/15/2016 05:00:00 AM,Landslide at Pub Sarania Hill,"Pub Sarania Hill, Guwahati, Assam, India"

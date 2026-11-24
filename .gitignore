@@ -29,6 +29,7 @@ yarn-error.log*
 
 # Large Data & Machine Learning Artifacts
 ml/data/raw/
+ml/data/processed/outside_ner_landslides.csv
 ml/data/processed/*.tif
 ml/data/processed/*.nc
 backend/uploads/
