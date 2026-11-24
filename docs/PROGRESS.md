@@ -64,7 +64,7 @@ As required by engineering accountability rules, all modifications made outside 
 |---|---|---|---|
 | **Phase 0** | Inspection & Planning | **Completed & Approved** | 2026-11-21 |
 | **Phase 1** | Foundation (Frontend ↔ Backend) | **Completed & Approved with Fixes** | 2026-11-21 |
-| **Phase 2** | Data Feasibility Spike (NER Audit) | **Completed (Rigorous PIP Audit Done; Awaiting Study Area Selection)** | 2026-11-23 |
+| **Phase 2** | Data Feasibility Spike (NER Audit) | **Completed (Rigorous PIP Audit Done; Awaiting Study Area Selection)** | 2026-11-24 |
 | **Phase 3** | Cloud Database (Supabase + PostGIS) | Pending | Target: Week 2 |
 | **Phase 4** | Backend Core (Auth, Roles, Events API) | Pending | Target: Week 3 |
 | **Phase 5** | UI Foundation, Dashboard & GIS Map | Pending | Target: Week 3 |
@@ -108,30 +108,34 @@ As required by engineering accountability rules, all modifications made outside 
 ### Phase 2: Data Feasibility Spike & Rigorous Spatial Audit
 - [x] Download untouched raw NASA GLC export to `ml/data/raw/Global_Landslide_Catalog_Export.csv` (SHA-256: `2c4898899dd4f373c4320e121c5b655ebb5394d431fa42e57ec4828d07d48b04`).
 - [x] Diagnose character encoding: Raw file is UTF-8; Latin macrons (e.g. `ā` in `Nāgāland`) misrender as `Ä` under Windows CP1252. Explicit UTF-8 handling enforced across all scripts.
-- [x] Download official boundary files (`india_state.geojson`, `india_district.geojson`) into `ml/data/raw/boundaries/` from GADM / Datameet India (`geohacker/india`).
+- [x] Audit boundary file provenance: Documented that `india_state.geojson` and `india_district.geojson` (35 states, 594 districts) are pre-2011 open-source approximations, not official Survey of India data; documented acquisition paths for official modern boundaries.
 - [x] Implement rigorous Point-in-Polygon (PIP) audit via Shapely (`scripts/audit_and_clean_glc.py`):
-  - Evaluated all 11,033 global rows.
-  - Excluded 1,654 test/non-glc rows (`event_import_source != 'glc'`, including requested test IDs 6105, 6200, 5250, 4378, 4446, 4798, 4860).
-  - Assigned true state and district geometries.
-  - Identified **359 verified NER events** strictly inside the 8 NER states.
+  - Evaluated all 11,033 global rows using `event_id` as primary key.
+  - Excluded 90 genuine test rows (`event_import_source == 'test'`).
+  - Separated 98 unverified open/COOLR submissions in NER (`event_import_source == ''`), containing 40 high-precision ($\le 1\text{km}$) records.
+  - Identified **359 verified legacy GLC events** strictly inside the 8 NER states.
+  - Assigned true state and district geometries via Shapely containment.
   - Reassigned 109 rows that had wrong state labels under gazetteer matching.
-  - Separated 9,020 rows outside NER (including West Bengal: Darjeeling, Haora, Kolkata, Murshidabad).
+  - Separated 10,486 rows outside NER (including West Bengal: Darjeeling, Haora, Kolkata, Murshidabad).
   - Restored real Sikkim events wrongly grouped under border labels back to Sikkim.
-  - Flagged 37 rows with coordinate/description disagreements (e.g., ID 141 naming Singtam in East Sikkim but coordinates in East Khasi Hills, Meghalaya).
+  - Flagged 38 rows with coordinate/description disagreements (e.g., ID 141 naming Singtam in East Sikkim but coordinates in East Khasi Hills, Meghalaya).
   - Grouped multi-row press reports into **288 independent event groups** by `(source_link, event_date)`.
-  - Parsed all dates with explicit formats (`date_precision` = day for 100% of cleaned NER rows; range 1988–2016).
-  - Audited location accuracy: only 14.2% $\le 1\text{km}$; 32.6% at 5km; 18.1% at 25km; 14.2% at 50km. Justified why 100m grid modeling requires spatial buffer sampling.
-  - Audited landslide settings: 76.3% unknown; >80% of documented settings are roads (`above_road`) or urban settlements.
+  - Date parsing audit: confirmed `MM/DD/YYYY` convention against Darjeeling 1 July 2015 and Manipur 1 August 2015; flagged 38.4% ambiguous rows and 8.1% day=1 placeholders; corrected ID 260 date calculation bug.
+  - Spatial accuracy by area: East Sikkim (2 usable at 1km, 8 at 5km), All Sikkim (4 usable at 1km, 16 at 5km), Aizawl (5 usable at 1km, 12 at 5km), Senapati+Tamenglong (3 usable at 1km, 18 at 5km). Justified why 100m grid modeling requires InfoVal/AHP baseline rather than raw GLC points.
+  - Bias audit: Explicit settings show 77.6% road/urban among known records (65.9% road, 11.8% urban); keyword text scan reveals 81.9% of all records mention roads or settlements.
 - [x] Verified ISRO Landslide Atlas (2023) citations:
   - Document: Technical Report `NRSC-DMA-NDEM-FEB-2023-TR-1768`.
   - South Sikkim (Namchi) ranked #8 and East Sikkim (Gangtok) ranked #9 in national risk exposure: **Page 76, Table 4.1**.
   - Mizoram 12,385 landslides (8,926 in 2017): **Pages 17–19 and 22–24**.
+  - Provided exact acquisition procedures for ISRO Bhuvan and GSI Bhukosh inventories.
 - [x] Document candidate satellite/terrain sources in [`docs/data-sources.md`](docs/data-sources.md) with verified official URLs, licences, and access methods.
-- [x] Test Next.js 15 upgrade on `feature/next15-upgrade`:
-  - Production build compiled successfully (`npm run build` exit code 0).
-  - Audit revealed 2 persistent vulnerabilities in PostCSS dependency bundled within Next.js (`postcss <=8.5.22`), plus React 19 peer dependency overrides.
-  - Kept Next.js 14.2.x on `main` per user instructions; branch `feature/next15-upgrade` preserved for inspection.
-- [ ] **OWNER:** Review audited district counts and select final study area (Option A: East Sikkim alone with literature/AHP baseline; Option B: All-Sikkim corridor / 44 events; Option C: Manipur Transit Corridor / 46 events; Option D: Aizawl District / 16 events).
+- [x] Next.js 15 upgrade evaluation and merge:
+  - Upgraded frontend to Next.js 15.5.29 and React 19 on branch `feature/next15-upgrade`.
+  - Implemented dynamic Leaflet test map component (`frontend/src/app/test-map/`).
+  - Tested production build (`npm run build` exit code 0) and live dev server (`GET /test-map` returns HTTP 200).
+  - Verified npm audit side-by-side comparison (PostCSS advisory present on both 14 and 15; Next.js GHSA-9g9p resolved in 15).
+  - Merged `feature/next15-upgrade` into `main` cleanly.
+- [ ] **OWNER:** Review audited district counts and select final study area and modeling strategy (Option A: East Sikkim with InfoVal/AHP literature baseline; Option B: All-Sikkim regional model; Option C: Manipur Transit Corridor; Option D: Aizawl District).
 
 ### Phase 3: Cloud Database & Boundaries
 - [ ] Guide Supabase project configuration with PostGIS extension enabled.
@@ -224,5 +228,5 @@ As required by engineering accountability rules, all modifications made outside 
 | 1 | System `PATH` missing `C:\Windows\System32` and PowerShell | PowerShell commands failed in shell runner | Documented in System Changes section; resolved | Resolved |
 | 2 | Python & Node versions needed alignment | Needed Python 3.12 & Node LTS | Owner installed Python 3.12.10 & Node v22.23.5; verified | Resolved |
 | 3 | Folder path naming | Spaces in path `D:\Landslide Risk Monitoring System` | Owner renamed folder to canonical `D:\LandslideNER` | Resolved |
-| 4 | Next.js 14 npm audit warning | High/critical advisories in PostCSS bundled in Next.js | Evaluated Next.js 15.5.29 on `feature/next15-upgrade`. Verified build succeeds, but PostCSS vulnerability remains in upstream Next.js. Kept 14.2.x on `main` per rules. | Monitored |
-| 5 | NASA GLC location accuracy mismatch | 85.8% of points have accuracy $\ge 5\text{km}$ | 100m grid cell direct training is unjustified without spatial buffer or corridor aggregation; recommended InfoVal baseline and regional corridor sampling | Resolved |
+| 4 | Next.js 14 npm audit warning | High/critical advisories in PostCSS and Image Optimizer | Tested Next.js 15.5.29 on `feature/next15-upgrade`; verified `/test-map` renders 200 with Leaflet; merged to `main`. Build-time PostCSS advisory monitored. | Resolved |
+| 5 | NASA GLC location accuracy mismatch | 85.8% of points have accuracy $\ge 5\text{km}$; 0 sub-100m points | 100m grid cell direct ML training is unjustified; recommended InfoVal baseline and regional corridor sampling | Resolved |
