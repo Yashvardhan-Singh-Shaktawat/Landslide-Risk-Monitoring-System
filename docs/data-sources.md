@@ -153,7 +153,7 @@ Every source's status is explicitly marked as either **VERIFIED (official page)*
   - GSI Bhusanket explicit data-use licence is **UNKNOWN**.
   - While government reports are viewable, redistribution rights, commercial use terms, and automated API ingestion permissions are not explicitly stated under a standard open licence (such as CC-BY or MIT).
 - **Scientific Impact on Study Area Options:**
-  - If parsed, 36,156 field-validated landslides could significantly expand positive training labels in NER states (e.g. Sikkim, Mizoram, Manipur), overcoming the sample size limitations of NASA GLC.
+  - The 36,156 counter on the Bhusanket portal is likely all-India; the **NER share is unknown** until the PDF is parsed in a dedicated mini-phase before Phase 6.
   - **Positional Accuracy Caveat:** The GSI inventory has no `location_accuracy` column; positional error is unknown, and coordinates may represent approximate village centroids or road marker posts rather than exact failure scarps.
 - **Verification Status:** **Owner-observed facts verified; data-use licence UNKNOWN; Bhukosh export UNVERIFIED**.
 
@@ -177,9 +177,9 @@ Every source's status is explicitly marked as either **VERIFIED (official page)*
   - `ml/data/raw/boundaries/india_state.geojson` (35 features, 21.90 MB)
   - `ml/data/raw/boundaries/india_district.geojson` (594 features, 32.91 MB)
 - **Source & Provenance:**
-  - Open-source GeoJSON derivative based on GADM v2 and early Census 2001 cartography.
-  - **Licence:** Non-commercial academic research licence (GADM).
-  - **Vintage:** Pre-2011 (Census 2001 era).
+  - Open-source GeoJSON derivative using GADM-style schema (`ID_0=105, NAME_1, NAME_2`; exact GADM v1 vs v2 provenance unverified).
+  - **Licence:** GADM non-commercial academic use / Open Data derivative (exact upstream licence unverified).
+  - **Vintage:** Pre-2011 (594 districts, 35 states/UTs).
   - **State Count (35):** Pre-Telangana (2014) and pre-J&K reorganization (2019).
   - **District Count (594):** Represents India's 2001 census administrative divisions (594 districts), compared to 640 districts in 2011 and >780 districts in 2024.
   - **Outdated NER Districts:**
@@ -187,14 +187,15 @@ Every source's status is explicitly marked as either **VERIFIED (official page)*
     * *Manipur (9 districts):* Contains pre-2016 9 districts (Chandel, Churachandpur, Senapati, Tamenglong, Ukhrul, Bishnupur, Thoubal, Imphal East, Imphal West). Lacks the 7 districts created in Dec 2016 (Kangpokpi, Tengnoupal, Pherzawl, Noney, Kamjong, Kakching, Jiribam).
     * *Sikkim (4 districts):* Contains pre-2021 4 districts (East, West, North, South). Lacks the Dec 2021 reorganization into 6 districts (Gangtok, Pakyong, Namchi, Soreng, Gyalshing, Mangan).
 - **Official Status:** **NOT official Survey of India boundaries.** These files are educational and academic approximations.
-- **Candidate Improved Boundary Dataset (DataMeet Maps):**
+- **Downloaded Boundary Dataset (DataMeet Maps — Pending Owner Review Before DB Load):**
   - **Repository:** Data{Meet} Maps ([https://github.com/datameet/maps](https://github.com/datameet/maps))
-  - **Candidate Path:** `Districts/Census_2011/` (`2011_Dist.shp` shapefile package, ~18 MB zip)
-  - **Licence:** **Creative Commons Attribution 4.0 International (CC BY 4.0)** (or CC BY 2.5 India)
-  - **Vintage:** Census 2011 (640 districts across India).
-  - **Limitations:** While Census 2011 updates Assam and national boundaries, it still predates Manipur's 2016 split (9 to 16 districts) and Sikkim's 2021 split (4 to 6 districts).
+  - **Downloaded Path:** `ml/data/raw/boundaries/datameet_2011/` (from `Districts/Census_2011/`)
+  - **Files & Sizes:** `2011_Dist.shp` (10,220,732 bytes), `2011_Dist.dbf` (54,678 bytes), `2011_Dist.sbn` (6,700 bytes), `2011_Dist.shx` (5,228 bytes), `2011_Dist.sbx` (604 bytes), `2011_Dist.prj` (145 bytes) — total 10,288,087 bytes (~9.81 MB).
+  - **Licence:** **MIT License** (per `LICENSE` file in `datameet/maps`, Copyright (c) 2020 DataMeet India community).
+  - **Vintage:** Census 2011 (640 districts across India; labelled *"2011 districts (Manipur 9, Sikkim 4; since reorganised)"*).
+  - **Limitations:** While Census 2011 updates Assam and national boundaries, it predates Manipur's 2016 split (9 to 16 districts) and Sikkim's 2021 split (4 to 6 districts). District-level counts must not be presented as current or precise.
   - **DataMeet "730 districts" Claim:** `UNVERIFIED (owner to check)`.
-  - **Download Status:** **PENDING OWNER CONFIRMATION.** The file will NOT be downloaded until the owner explicitly approves.
+  - **DB Load Status:** Downloaded to `ml/data/raw/boundaries/datameet_2011/`; awaiting owner review of LICENSE, file listing, and SHA-256 before loading into Phase 3 PostGIS.
 - **Official Alternative:**
   - **Survey of India (SOI) Open Maps Portal:** [https://onlinemaps.surveyofindia.gov.in/](https://onlinemaps.surveyofindia.gov.in/) (Official Administrative Boundary Database with legal demarcation).
 
